@@ -1,0 +1,33 @@
+// This file is part of coursework 2 for COMP1212
+// which follows the book "The Elements of Computing Systems"
+// by Nisan and Schocken, MIT Press.
+// Written by Sam Wilson
+
+/**
+ * 16-bit register.
+ * If load[t]=1 then out[t+1] = in[t]
+ * else out does not change
+ */
+
+CHIP Register {
+    IN x[16], load;
+    OUT out[16];
+
+    PARTS:
+    Bit(x=x[0],load=load,out=out[0]);
+    Bit(x=x[1],load=load,out=out[1]);
+    Bit(x=x[2],load=load,out=out[2]);
+    Bit(x=x[3],load=load,out=out[3]);
+    Bit(x=x[4],load=load,out=out[4]);
+    Bit(x=x[5],load=load,out=out[5]);
+    Bit(x=x[6],load=load,out=out[6]);
+    Bit(x=x[7],load=load,out=out[7]);
+    Bit(x=x[8],load=load,out=out[8]);
+    Bit(x=x[9],load=load,out=out[9]);
+    Bit(x=x[10],load=load,out=out[10]);
+    Bit(x=x[11],load=load,out=out[11]);
+    Bit(x=x[12],load=load,out=out[12]);
+    Bit(x=x[13],load=load,out=out[13]);
+    Bit(x=x[14],load=load,out=out[14]);
+    Bit(x=x[15],load=load,out=out[15]);
+}

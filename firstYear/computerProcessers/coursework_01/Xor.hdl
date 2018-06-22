@@ -1,0 +1,21 @@
+// This file is part of coursework 1 for COMP1212
+// which follows the book "The Elements of Computing Systems"
+// by Nisan and Schocken, MIT Press.
+// Written by Sam Wilson
+
+/**
+ *  Exclusive-or gate:
+ *  out = not ( x == y ).
+ */
+
+CHIP Xor {
+    IN x, y;
+    OUT out;
+
+    PARTS:
+    Not(x=x, out=notx);
+    Not(x=y, out=noty);
+    And(x=x, y=noty, out=tmp1);
+    And(x=notx, y=y, out=tmp2);
+    Or(x=tmp1, y=tmp2, out=out);
+}

@@ -1,0 +1,35 @@
+// This file is part of coursework 1 for COMP1212
+// which follows the book "The Elements of Computing Systems"
+// by Nisan and Schocken, MIT Press.
+// Written by Sam Wilson
+
+/**
+ * 8-way 16-bit multiplexor.
+ * out = s if sel==000
+ *       t if sel==001
+ *       u if sel==010
+ *       v if sel==011
+ *       w if sel==100
+ *       x if sel==101
+ *       y if sel==110
+ *       z if sel==111
+ */
+
+CHIP Mux8Way16 {
+    IN s[16], t[16], u[16], v[16],
+       w[16], x[16], y[16], z[16],
+       sel[3];
+    OUT out[16];
+
+    PARTS:
+    Mux16(x=s,y=t,sel=sel[0],out=tmp1);
+    Mux16(x=u,y=v,sel=sel[0],out=tmp2);
+    Mux16(x=w,y=x,sel=sel[0],out=tmp3);
+    Mux16(x=y,y=z,sel=sel[0],out=tmp4);
+
+    Mux16(x=tmp1,y=tmp2,sel=sel[1],out=tmp5);
+    Mux16(x=tmp3,y=tmp4,sel=sel[1],out=tmp6);
+
+    Mux16(x=tmp5,y=tmp6,sel=sel[2],out=out);
+
+}
