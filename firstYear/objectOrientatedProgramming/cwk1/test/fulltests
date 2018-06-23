@@ -1,0 +1,19 @@
+#!/bin/bash
+
+export CLASSPATH=.:../lib/junit-4.12.jar:../lib/hamcrest-all-1.3.jar
+
+echo "Copying files..."
+
+cp ../src/Location.java . || exit 4
+cp ../src/WeatherRecord.java . || exit 4
+cp ../src/WeatherStation.java . || exit 4
+
+echo "Compiling..."
+echo
+
+javac Location.java || exit 3
+javac WeatherRecord.java || exit 3
+javac WeatherStation.java || exit 3
+
+javac FullTests.java || exit 2
+java org.junit.runner.JUnitCore FullTests

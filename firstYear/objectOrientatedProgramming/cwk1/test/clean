@@ -1,0 +1,6 @@
+#!/bin/bash
+
+rm -f *.class
+rm -f Location.java
+rm -f WeatherRecord.java
+rm -f WeatherStation.java
