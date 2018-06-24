@@ -1,0 +1,675 @@
+/********************************************************************************
+** Form generated from reading UI file 'learnPage.ui'
+**
+** Created by: Qt User Interface Compiler version 5.3.1
+**
+** WARNING! All changes made in this file will be lost when recompiling UI file!
+********************************************************************************/
+
+#ifndef UI_LEARNPAGE_H
+#define UI_LEARNPAGE_H
+
+#include <QtCore/QDate>
+#include <QtCore/QVariant>
+#include <QtWidgets/QAction>
+#include <QtWidgets/QApplication>
+#include <QtWidgets/QButtonGroup>
+#include <QtWidgets/QCheckBox>
+#include <QtWidgets/QDateTimeEdit>
+#include <QtWidgets/QFrame>
+#include <QtWidgets/QHeaderView>
+#include <QtWidgets/QLabel>
+#include <QtWidgets/QLineEdit>
+#include <QtWidgets/QPushButton>
+#include <QtWidgets/QScrollArea>
+#include <QtWidgets/QWidget>
+
+QT_BEGIN_NAMESPACE
+
+class Ui_Form
+{
+public:
+    QPushButton *pushButton_3;
+    QLabel *label;
+    QFrame *line;
+    QLabel *label_2;
+    QPushButton *pushButton_4;
+    QPushButton *pushButton_5;
+    QLabel *label_3;
+    QLineEdit *lineEdit;
+    QPushButton *pushButton;
+    QPushButton *pushButton_2;
+    QPushButton *pushButton_6;
+    QPushButton *pushButton_7;
+    QPushButton *pushButton_8;
+    QLabel *label_4;
+    QPushButton *pushButton_10;
+    QLabel *label_5;
+    QPushButton *pushButton_9;
+    QPushButton *pushButton_11;
+    QFrame *line_3;
+    QPushButton *pushButton_12;
+    QPushButton *pushButton_13;
+    QDateTimeEdit *dateTimeEdit;
+    QLabel *label_6;
+    QLineEdit *lineEdit_2;
+    QPushButton *pushButton_14;
+    QPushButton *pushButton_15;
+    QPushButton *pushButton_16;
+    QPushButton *pushButton_17;
+    QPushButton *pushButton_18;
+    QPushButton *pushButton_19;
+    QLabel *label_7;
+    QScrollArea *scrollArea;
+    QWidget *scrollAreaWidgetContents;
+    QCheckBox *checkBox;
+    QLabel *label_8;
+    QLabel *label_9;
+    QLabel *label_10;
+    QLabel *label_11;
+    QLabel *label_12;
+    QLabel *label_13;
+    QLabel *label_14;
+    QLabel *label_15;
+    QPushButton *pushButton_20;
+    QLabel *label_16;
+    QLabel *label_17;
+    QPushButton *pushButton_21;
+    QCheckBox *checkBox_2;
+    QLabel *label_18;
+    QLabel *label_19;
+    QCheckBox *checkBox_3;
+    QLabel *label_20;
+    QPushButton *pushButton_22;
+    QLabel *label_21;
+    QLabel *label_22;
+    QCheckBox *checkBox_4;
+    QLabel *label_23;
+    QPushButton *pushButton_23;
+    QLabel *label_24;
+    QLabel *label_25;
+    QCheckBox *checkBox_5;
+    QLabel *label_26;
+    QPushButton *pushButton_24;
+    QLabel *label_27;
+    QLabel *label_28;
+    QCheckBox *checkBox_6;
+    QLabel *label_29;
+    QPushButton *pushButton_25;
+    QLabel *label_30;
+    QLabel *label_31;
+    QPushButton *pushButton_26;
+    QLabel *label_32;
+    QLabel *label_33;
+    QCheckBox *checkBox_7;
+    QCheckBox *checkBox_8;
+    QLabel *label_36;
+    QLabel *label_34;
+    QLabel *label_35;
+    QPushButton *pushButton_27;
+    QCheckBox *checkBox_9;
+    QLabel *label_37;
+    QPushButton *pushButton_28;
+    QLabel *label_39;
+    QLabel *label_38;
+    QCheckBox *checkBox_19;
+    QLabel *label_72;
+    QLabel *label_74;
+    QLabel *label_73;
+    QPushButton *pushButton_38;
+    QCheckBox *checkBox_20;
+    QLabel *label_76;
+    QPushButton *pushButton_39;
+    QLabel *label_77;
+    QLabel *label_75;
+
+    void setupUi(QWidget *Form)
+    {
+        if (Form->objectName().isEmpty())
+            Form->setObjectName(QStringLiteral("Form"));
+        Form->resize(1132, 666);
+        QSizePolicy sizePolicy(QSizePolicy::Preferred, QSizePolicy::Preferred);
+        sizePolicy.setHorizontalStretch(0);
+        sizePolicy.setVerticalStretch(9);
+        sizePolicy.setHeightForWidth(Form->sizePolicy().hasHeightForWidth());
+        Form->setSizePolicy(sizePolicy);
+        Form->setAutoFillBackground(false);
+        pushButton_3 = new QPushButton(Form);
+        pushButton_3->setObjectName(QStringLiteral("pushButton_3"));
+        pushButton_3->setGeometry(QRect(660, 90, 121, 41));
+        pushButton_3->setStyleSheet(QLatin1String("color:rgb(255, 48, 29);\n"
+"font: 75 Bold 22pt \"Cantarell\";"));
+        pushButton_3->setCheckable(false);
+        pushButton_3->setChecked(false);
+        label = new QLabel(Form);
+        label->setObjectName(QStringLiteral("label"));
+        label->setGeometry(QRect(20, -50, 541, 201));
+        label->setStyleSheet(QStringLiteral("color:rgb(64, 109, 21);"));
+        label->setPixmap(QPixmap(QString::fromUtf8("minervaheader_qas.svg")));
+        line = new QFrame(Form);
+        line->setObjectName(QStringLiteral("line"));
+        line->setGeometry(QRect(20, 170, 1081, 20));
+        line->setLineWidth(2);
+        line->setFrameShape(QFrame::HLine);
+        line->setFrameShadow(QFrame::Sunken);
+        label_2 = new QLabel(Form);
+        label_2->setObjectName(QStringLiteral("label_2"));
+        label_2->setGeometry(QRect(120, 610, 371, 20));
+        label_2->setStyleSheet(QStringLiteral("font: 75 Bold 11pt \"Cantarell\";"));
+        pushButton_4 = new QPushButton(Form);
+        pushButton_4->setObjectName(QStringLiteral("pushButton_4"));
+        pushButton_4->setGeometry(QRect(950, 90, 151, 41));
+        pushButton_4->setStyleSheet(QLatin1String("color:rgb(23, 2, 255);\n"
+"font: 75 Bold 22pt \"Cantarell\";"));
+        pushButton_5 = new QPushButton(Form);
+        pushButton_5->setObjectName(QStringLiteral("pushButton_5"));
+        pushButton_5->setGeometry(QRect(800, 90, 131, 41));
+        pushButton_5->setStyleSheet(QLatin1String("color:rgb(64, 109, 21);\n"
+"font: 75 Bold 22pt \"Cantarell\";"));
+        pushButton_5->setCheckable(true);
+        pushButton_5->setChecked(true);
+        label_3 = new QLabel(Form);
+        label_3->setObjectName(QStringLiteral("label_3"));
+        label_3->setGeometry(QRect(30, 580, 71, 71));
+        label_3->setMaximumSize(QSize(141, 141));
+        label_3->setSizeIncrement(QSize(0, 0));
+        label_3->setBaseSize(QSize(12, 12));
+        label_3->setPixmap(QPixmap(QString::fromUtf8("rsz_1touch.png")));
+        lineEdit = new QLineEdit(Form);
+        lineEdit->setObjectName(QStringLiteral("lineEdit"));
+        lineEdit->setGeometry(QRect(20, 140, 551, 31));
+        pushButton = new QPushButton(Form);
+        pushButton->setObjectName(QStringLiteral("pushButton"));
+        pushButton->setGeometry(QRect(580, 140, 91, 31));
+        pushButton->setStyleSheet(QStringLiteral("font: 75 Bold 11pt \"Cantarell\";"));
+        pushButton_2 = new QPushButton(Form);
+        pushButton_2->setObjectName(QStringLiteral("pushButton_2"));
+        pushButton_2->setGeometry(QRect(680, 140, 131, 31));
+        pushButton_2->setStyleSheet(QStringLiteral("font: 75 Bold 11pt \"Cantarell\";"));
+        pushButton_6 = new QPushButton(Form);
+        pushButton_6->setObjectName(QStringLiteral("pushButton_6"));
+        pushButton_6->setGeometry(QRect(820, 140, 131, 31));
+        pushButton_6->setStyleSheet(QStringLiteral("font: 75 Bold 11pt \"Cantarell\";"));
+        pushButton_7 = new QPushButton(Form);
+        pushButton_7->setObjectName(QStringLiteral("pushButton_7"));
+        pushButton_7->setGeometry(QRect(960, 140, 81, 31));
+        pushButton_7->setStyleSheet(QStringLiteral("font: 75 Bold 11pt \"Cantarell\";"));
+        pushButton_8 = new QPushButton(Form);
+        pushButton_8->setObjectName(QStringLiteral("pushButton_8"));
+        pushButton_8->setGeometry(QRect(1050, 140, 51, 31));
+        pushButton_8->setStyleSheet(QStringLiteral("font: 75 Bold 11pt \"Cantarell\";"));
+        label_4 = new QLabel(Form);
+        label_4->setObjectName(QStringLiteral("label_4"));
+        label_4->setGeometry(QRect(880, 40, 151, 41));
+        label_4->setStyleSheet(QLatin1String("font: 75 Bold 25pt \"Cantarell\";\n"
+"color:rgb(8, 8, 8);"));
+        pushButton_10 = new QPushButton(Form);
+        pushButton_10->setObjectName(QStringLiteral("pushButton_10"));
+        pushButton_10->setGeometry(QRect(1030, 10, 71, 71));
+        pushButton_10->setStyleSheet(QLatin1String("background-color: white;\n"
+"color:rgb(255, 48, 29);\n"
+"font: 75 Bold 19pt \"Cantarell\";"));
+        QIcon icon;
+        icon.addFile(QStringLiteral("close.png"), QSize(), QIcon::Normal, QIcon::Off);
+        pushButton_10->setIcon(icon);
+        pushButton_10->setIconSize(QSize(60, 60));
+        label_5 = new QLabel(Form);
+        label_5->setObjectName(QStringLiteral("label_5"));
+        label_5->setGeometry(QRect(890, 10, 131, 31));
+        label_5->setStyleSheet(QLatin1String("border-radius: 25px;\n"
+"border-color: rgba(201, 76, 76, 0.3);\n"
+"color:rgb(16, 16, 16);\n"
+"font: 75 Bold 19pt \"Cantarell\";"));
+        pushButton_9 = new QPushButton(Form);
+        pushButton_9->setObjectName(QStringLiteral("pushButton_9"));
+        pushButton_9->setGeometry(QRect(870, 590, 51, 51));
+        QIcon icon1;
+        icon1.addFile(QStringLiteral("facebook.png"), QSize(), QIcon::Normal, QIcon::Off);
+        pushButton_9->setIcon(icon1);
+        pushButton_9->setIconSize(QSize(70, 70));
+        pushButton_11 = new QPushButton(Form);
+        pushButton_11->setObjectName(QStringLiteral("pushButton_11"));
+        pushButton_11->setGeometry(QRect(930, 590, 51, 51));
+        QIcon icon2;
+        icon2.addFile(QStringLiteral("Twitter_bird_white_background.png"), QSize(), QIcon::Normal, QIcon::Off);
+        pushButton_11->setIcon(icon2);
+        pushButton_11->setIconSize(QSize(40, 40));
+        line_3 = new QFrame(Form);
+        line_3->setObjectName(QStringLiteral("line_3"));
+        line_3->setGeometry(QRect(20, 560, 1081, 20));
+        line_3->setStyleSheet(QStringLiteral("font: Bold;"));
+        line_3->setFrameShadow(QFrame::Sunken);
+        line_3->setLineWidth(2);
+        line_3->setMidLineWidth(0);
+        line_3->setFrameShape(QFrame::HLine);
+        pushButton_12 = new QPushButton(Form);
+        pushButton_12->setObjectName(QStringLiteral("pushButton_12"));
+        pushButton_12->setGeometry(QRect(990, 590, 51, 51));
+        QIcon icon3;
+        icon3.addFile(QStringLiteral("insta.jpg"), QSize(), QIcon::Normal, QIcon::Off);
+        pushButton_12->setIcon(icon3);
+        pushButton_12->setIconSize(QSize(40, 40));
+        pushButton_13 = new QPushButton(Form);
+        pushButton_13->setObjectName(QStringLiteral("pushButton_13"));
+        pushButton_13->setGeometry(QRect(1050, 590, 51, 51));
+        QIcon icon4;
+        icon4.addFile(QStringLiteral("in.png"), QSize(), QIcon::Normal, QIcon::Off);
+        pushButton_13->setIcon(icon4);
+        pushButton_13->setIconSize(QSize(40, 40));
+        dateTimeEdit = new QDateTimeEdit(Form);
+        dateTimeEdit->setObjectName(QStringLiteral("dateTimeEdit"));
+        dateTimeEdit->setEnabled(true);
+        dateTimeEdit->setGeometry(QRect(20, 100, 361, 32));
+        dateTimeEdit->setFocusPolicy(Qt::WheelFocus);
+        dateTimeEdit->setAcceptDrops(true);
+        dateTimeEdit->setWrapping(false);
+        dateTimeEdit->setFrame(true);
+        dateTimeEdit->setReadOnly(false);
+        dateTimeEdit->setButtonSymbols(QAbstractSpinBox::NoButtons);
+        dateTimeEdit->setAccelerated(false);
+        dateTimeEdit->setKeyboardTracking(false);
+        dateTimeEdit->setDateTime(QDateTime(QDate(2017, 12, 5), QTime(14, 15, 0)));
+        dateTimeEdit->setDate(QDate(2017, 12, 5));
+        dateTimeEdit->setTime(QTime(14, 15, 0));
+        dateTimeEdit->setMaximumTime(QTime(23, 59, 59));
+        dateTimeEdit->setCalendarPopup(true);
+        dateTimeEdit->setTimeSpec(Qt::OffsetFromUTC);
+        label_6 = new QLabel(Form);
+        label_6->setObjectName(QStringLiteral("label_6"));
+        label_6->setGeometry(QRect(820, 180, 151, 61));
+        label_6->setStyleSheet(QLatin1String("font: 75 Bold 30pt \"Cantarell\";\n"
+"color:rgb(64, 109, 21);"));
+        lineEdit_2 = new QLineEdit(Form);
+        lineEdit_2->setObjectName(QStringLiteral("lineEdit_2"));
+        lineEdit_2->setGeometry(QRect(710, 240, 371, 31));
+        pushButton_14 = new QPushButton(Form);
+        pushButton_14->setObjectName(QStringLiteral("pushButton_14"));
+        pushButton_14->setGeometry(QRect(920, 280, 141, 81));
+        pushButton_14->setStyleSheet(QStringLiteral("font: 75 BOLD 21pt \"Cantarell\";"));
+        pushButton_15 = new QPushButton(Form);
+        pushButton_15->setObjectName(QStringLiteral("pushButton_15"));
+        pushButton_15->setGeometry(QRect(740, 280, 141, 81));
+        pushButton_15->setStyleSheet(QStringLiteral("font: 75 BOLD 21pt \"Cantarell\";"));
+        pushButton_15->setCheckable(false);
+        pushButton_15->setChecked(false);
+        pushButton_16 = new QPushButton(Form);
+        pushButton_16->setObjectName(QStringLiteral("pushButton_16"));
+        pushButton_16->setGeometry(QRect(920, 380, 141, 81));
+        pushButton_16->setStyleSheet(QStringLiteral("font: 75 BOLD 21pt \"Cantarell\";"));
+        pushButton_17 = new QPushButton(Form);
+        pushButton_17->setObjectName(QStringLiteral("pushButton_17"));
+        pushButton_17->setGeometry(QRect(740, 380, 141, 81));
+        pushButton_17->setStyleSheet(QStringLiteral("font: 75 BOLD 21pt \"Cantarell\";"));
+        pushButton_18 = new QPushButton(Form);
+        pushButton_18->setObjectName(QStringLiteral("pushButton_18"));
+        pushButton_18->setGeometry(QRect(740, 480, 141, 81));
+        pushButton_18->setStyleSheet(QStringLiteral("font: 75 BOLD 21pt \"Cantarell\";"));
+        pushButton_19 = new QPushButton(Form);
+        pushButton_19->setObjectName(QStringLiteral("pushButton_19"));
+        pushButton_19->setGeometry(QRect(920, 480, 141, 81));
+        pushButton_19->setStyleSheet(QStringLiteral("font: 75 BOLD 21pt \"Cantarell\";"));
+        label_7 = new QLabel(Form);
+        label_7->setObjectName(QStringLiteral("label_7"));
+        label_7->setGeometry(QRect(270, 180, 161, 61));
+        label_7->setStyleSheet(QLatin1String("font: 75 Bold 30pt \"Cantarell\";\n"
+"color:rgb(64, 109, 21);"));
+        scrollArea = new QScrollArea(Form);
+        scrollArea->setObjectName(QStringLiteral("scrollArea"));
+        scrollArea->setGeometry(QRect(30, 240, 631, 321));
+        scrollArea->setAutoFillBackground(false);
+        scrollArea->setFrameShadow(QFrame::Sunken);
+        scrollArea->setWidgetResizable(false);
+        scrollAreaWidgetContents = new QWidget();
+        scrollAreaWidgetContents->setObjectName(QStringLiteral("scrollAreaWidgetContents"));
+        scrollAreaWidgetContents->setGeometry(QRect(0, -180, 609, 499));
+        checkBox = new QCheckBox(scrollAreaWidgetContents);
+        checkBox->setObjectName(QStringLiteral("checkBox"));
+        checkBox->setEnabled(true);
+        checkBox->setGeometry(QRect(520, 50, 21, 31));
+        checkBox->setMouseTracking(false);
+        checkBox->setIconSize(QSize(30, 30));
+        checkBox->setCheckable(true);
+        checkBox->setChecked(true);
+        checkBox->setTristate(false);
+        label_8 = new QLabel(scrollAreaWidgetContents);
+        label_8->setObjectName(QStringLiteral("label_8"));
+        label_8->setGeometry(QRect(10, 20, 71, 20));
+        label_8->setStyleSheet(QStringLiteral("font: 75 Bold 11pt \"Cantarell\";"));
+        label_9 = new QLabel(scrollAreaWidgetContents);
+        label_9->setObjectName(QStringLiteral("label_9"));
+        label_9->setGeometry(QRect(100, 20, 71, 20));
+        label_9->setStyleSheet(QStringLiteral("font: 75 Bold 11pt \"Cantarell\";"));
+        label_10 = new QLabel(scrollAreaWidgetContents);
+        label_10->setObjectName(QStringLiteral("label_10"));
+        label_10->setGeometry(QRect(180, 20, 71, 20));
+        label_10->setStyleSheet(QStringLiteral("font: 75 Bold 11pt \"Cantarell\";"));
+        label_11 = new QLabel(scrollAreaWidgetContents);
+        label_11->setObjectName(QStringLiteral("label_11"));
+        label_11->setGeometry(QRect(390, 20, 91, 20));
+        label_11->setStyleSheet(QStringLiteral("font: 75 Bold 11pt \"Cantarell\";"));
+        label_12 = new QLabel(scrollAreaWidgetContents);
+        label_12->setObjectName(QStringLiteral("label_12"));
+        label_12->setGeometry(QRect(500, 20, 71, 20));
+        label_12->setStyleSheet(QStringLiteral("font: 75 Bold 11pt \"Cantarell\";"));
+        label_13 = new QLabel(scrollAreaWidgetContents);
+        label_13->setObjectName(QStringLiteral("label_13"));
+        label_13->setGeometry(QRect(30, 60, 16, 20));
+        label_14 = new QLabel(scrollAreaWidgetContents);
+        label_14->setObjectName(QStringLiteral("label_14"));
+        label_14->setGeometry(QRect(80, 60, 81, 20));
+        label_15 = new QLabel(scrollAreaWidgetContents);
+        label_15->setObjectName(QStringLiteral("label_15"));
+        label_15->setGeometry(QRect(180, 60, 181, 20));
+        pushButton_20 = new QPushButton(scrollAreaWidgetContents);
+        pushButton_20->setObjectName(QStringLiteral("pushButton_20"));
+        pushButton_20->setGeometry(QRect(430, 50, 41, 31));
+        QIcon icon5;
+        icon5.addFile(QStringLiteral("Quiz-512.png"), QSize(), QIcon::Normal, QIcon::Off);
+        pushButton_20->setIcon(icon5);
+        pushButton_20->setIconSize(QSize(30, 30));
+        label_16 = new QLabel(scrollAreaWidgetContents);
+        label_16->setObjectName(QStringLiteral("label_16"));
+        label_16->setGeometry(QRect(180, 100, 181, 20));
+        label_17 = new QLabel(scrollAreaWidgetContents);
+        label_17->setObjectName(QStringLiteral("label_17"));
+        label_17->setGeometry(QRect(80, 100, 81, 20));
+        pushButton_21 = new QPushButton(scrollAreaWidgetContents);
+        pushButton_21->setObjectName(QStringLiteral("pushButton_21"));
+        pushButton_21->setGeometry(QRect(430, 90, 41, 31));
+        pushButton_21->setIcon(icon5);
+        pushButton_21->setIconSize(QSize(30, 30));
+        checkBox_2 = new QCheckBox(scrollAreaWidgetContents);
+        checkBox_2->setObjectName(QStringLiteral("checkBox_2"));
+        checkBox_2->setGeometry(QRect(520, 90, 21, 31));
+        checkBox_2->setIconSize(QSize(30, 30));
+        checkBox_2->setChecked(true);
+        label_18 = new QLabel(scrollAreaWidgetContents);
+        label_18->setObjectName(QStringLiteral("label_18"));
+        label_18->setGeometry(QRect(30, 100, 16, 20));
+        label_19 = new QLabel(scrollAreaWidgetContents);
+        label_19->setObjectName(QStringLiteral("label_19"));
+        label_19->setGeometry(QRect(180, 140, 181, 20));
+        checkBox_3 = new QCheckBox(scrollAreaWidgetContents);
+        checkBox_3->setObjectName(QStringLiteral("checkBox_3"));
+        checkBox_3->setGeometry(QRect(520, 130, 21, 31));
+        checkBox_3->setIconSize(QSize(30, 30));
+        checkBox_3->setChecked(true);
+        label_20 = new QLabel(scrollAreaWidgetContents);
+        label_20->setObjectName(QStringLiteral("label_20"));
+        label_20->setGeometry(QRect(30, 140, 16, 20));
+        pushButton_22 = new QPushButton(scrollAreaWidgetContents);
+        pushButton_22->setObjectName(QStringLiteral("pushButton_22"));
+        pushButton_22->setGeometry(QRect(430, 130, 41, 31));
+        pushButton_22->setIcon(icon5);
+        pushButton_22->setIconSize(QSize(30, 30));
+        label_21 = new QLabel(scrollAreaWidgetContents);
+        label_21->setObjectName(QStringLiteral("label_21"));
+        label_21->setGeometry(QRect(80, 140, 81, 20));
+        label_22 = new QLabel(scrollAreaWidgetContents);
+        label_22->setObjectName(QStringLiteral("label_22"));
+        label_22->setGeometry(QRect(180, 180, 181, 20));
+        checkBox_4 = new QCheckBox(scrollAreaWidgetContents);
+        checkBox_4->setObjectName(QStringLiteral("checkBox_4"));
+        checkBox_4->setGeometry(QRect(520, 170, 21, 31));
+        checkBox_4->setIconSize(QSize(30, 30));
+        checkBox_4->setChecked(true);
+        label_23 = new QLabel(scrollAreaWidgetContents);
+        label_23->setObjectName(QStringLiteral("label_23"));
+        label_23->setGeometry(QRect(30, 180, 16, 20));
+        pushButton_23 = new QPushButton(scrollAreaWidgetContents);
+        pushButton_23->setObjectName(QStringLiteral("pushButton_23"));
+        pushButton_23->setGeometry(QRect(430, 170, 41, 31));
+        pushButton_23->setIcon(icon5);
+        pushButton_23->setIconSize(QSize(30, 30));
+        label_24 = new QLabel(scrollAreaWidgetContents);
+        label_24->setObjectName(QStringLiteral("label_24"));
+        label_24->setGeometry(QRect(80, 180, 81, 20));
+        label_25 = new QLabel(scrollAreaWidgetContents);
+        label_25->setObjectName(QStringLiteral("label_25"));
+        label_25->setGeometry(QRect(180, 220, 181, 20));
+        checkBox_5 = new QCheckBox(scrollAreaWidgetContents);
+        checkBox_5->setObjectName(QStringLiteral("checkBox_5"));
+        checkBox_5->setGeometry(QRect(520, 210, 21, 31));
+        checkBox_5->setIconSize(QSize(30, 30));
+        checkBox_5->setChecked(true);
+        checkBox_5->setAutoRepeat(false);
+        label_26 = new QLabel(scrollAreaWidgetContents);
+        label_26->setObjectName(QStringLiteral("label_26"));
+        label_26->setGeometry(QRect(30, 220, 16, 20));
+        pushButton_24 = new QPushButton(scrollAreaWidgetContents);
+        pushButton_24->setObjectName(QStringLiteral("pushButton_24"));
+        pushButton_24->setGeometry(QRect(430, 210, 41, 31));
+        pushButton_24->setIcon(icon5);
+        pushButton_24->setIconSize(QSize(30, 30));
+        label_27 = new QLabel(scrollAreaWidgetContents);
+        label_27->setObjectName(QStringLiteral("label_27"));
+        label_27->setGeometry(QRect(80, 220, 81, 20));
+        label_28 = new QLabel(scrollAreaWidgetContents);
+        label_28->setObjectName(QStringLiteral("label_28"));
+        label_28->setGeometry(QRect(180, 260, 241, 20));
+        checkBox_6 = new QCheckBox(scrollAreaWidgetContents);
+        checkBox_6->setObjectName(QStringLiteral("checkBox_6"));
+        checkBox_6->setGeometry(QRect(520, 250, 21, 31));
+        checkBox_6->setIconSize(QSize(30, 30));
+        label_29 = new QLabel(scrollAreaWidgetContents);
+        label_29->setObjectName(QStringLiteral("label_29"));
+        label_29->setGeometry(QRect(30, 260, 16, 20));
+        pushButton_25 = new QPushButton(scrollAreaWidgetContents);
+        pushButton_25->setObjectName(QStringLiteral("pushButton_25"));
+        pushButton_25->setGeometry(QRect(430, 250, 41, 31));
+        pushButton_25->setIcon(icon5);
+        pushButton_25->setIconSize(QSize(30, 30));
+        label_30 = new QLabel(scrollAreaWidgetContents);
+        label_30->setObjectName(QStringLiteral("label_30"));
+        label_30->setGeometry(QRect(80, 260, 81, 20));
+        label_31 = new QLabel(scrollAreaWidgetContents);
+        label_31->setObjectName(QStringLiteral("label_31"));
+        label_31->setGeometry(QRect(30, 300, 16, 20));
+        pushButton_26 = new QPushButton(scrollAreaWidgetContents);
+        pushButton_26->setObjectName(QStringLiteral("pushButton_26"));
+        pushButton_26->setGeometry(QRect(430, 290, 41, 31));
+        pushButton_26->setIcon(icon5);
+        pushButton_26->setIconSize(QSize(30, 30));
+        label_32 = new QLabel(scrollAreaWidgetContents);
+        label_32->setObjectName(QStringLiteral("label_32"));
+        label_32->setGeometry(QRect(80, 300, 81, 20));
+        label_33 = new QLabel(scrollAreaWidgetContents);
+        label_33->setObjectName(QStringLiteral("label_33"));
+        label_33->setGeometry(QRect(180, 300, 241, 20));
+        checkBox_7 = new QCheckBox(scrollAreaWidgetContents);
+        checkBox_7->setObjectName(QStringLiteral("checkBox_7"));
+        checkBox_7->setGeometry(QRect(520, 290, 21, 31));
+        checkBox_7->setIconSize(QSize(30, 30));
+        checkBox_8 = new QCheckBox(scrollAreaWidgetContents);
+        checkBox_8->setObjectName(QStringLiteral("checkBox_8"));
+        checkBox_8->setGeometry(QRect(520, 330, 21, 31));
+        checkBox_8->setIconSize(QSize(30, 30));
+        label_36 = new QLabel(scrollAreaWidgetContents);
+        label_36->setObjectName(QStringLiteral("label_36"));
+        label_36->setGeometry(QRect(180, 340, 241, 20));
+        label_34 = new QLabel(scrollAreaWidgetContents);
+        label_34->setObjectName(QStringLiteral("label_34"));
+        label_34->setGeometry(QRect(30, 340, 16, 20));
+        label_35 = new QLabel(scrollAreaWidgetContents);
+        label_35->setObjectName(QStringLiteral("label_35"));
+        label_35->setGeometry(QRect(80, 340, 81, 20));
+        pushButton_27 = new QPushButton(scrollAreaWidgetContents);
+        pushButton_27->setObjectName(QStringLiteral("pushButton_27"));
+        pushButton_27->setGeometry(QRect(430, 330, 41, 31));
+        pushButton_27->setIcon(icon5);
+        pushButton_27->setIconSize(QSize(30, 30));
+        checkBox_9 = new QCheckBox(scrollAreaWidgetContents);
+        checkBox_9->setObjectName(QStringLiteral("checkBox_9"));
+        checkBox_9->setGeometry(QRect(520, 370, 21, 31));
+        checkBox_9->setIconSize(QSize(30, 30));
+        checkBox_9->setChecked(true);
+        label_37 = new QLabel(scrollAreaWidgetContents);
+        label_37->setObjectName(QStringLiteral("label_37"));
+        label_37->setGeometry(QRect(30, 380, 16, 20));
+        pushButton_28 = new QPushButton(scrollAreaWidgetContents);
+        pushButton_28->setObjectName(QStringLiteral("pushButton_28"));
+        pushButton_28->setGeometry(QRect(430, 370, 41, 31));
+        pushButton_28->setIcon(icon5);
+        pushButton_28->setIconSize(QSize(30, 30));
+        label_39 = new QLabel(scrollAreaWidgetContents);
+        label_39->setObjectName(QStringLiteral("label_39"));
+        label_39->setGeometry(QRect(180, 380, 241, 20));
+        label_38 = new QLabel(scrollAreaWidgetContents);
+        label_38->setObjectName(QStringLiteral("label_38"));
+        label_38->setGeometry(QRect(80, 380, 81, 20));
+        checkBox_19 = new QCheckBox(scrollAreaWidgetContents);
+        checkBox_19->setObjectName(QStringLiteral("checkBox_19"));
+        checkBox_19->setGeometry(QRect(520, 410, 21, 31));
+        checkBox_19->setIconSize(QSize(30, 30));
+        checkBox_19->setCheckable(false);
+        checkBox_19->setChecked(false);
+        label_72 = new QLabel(scrollAreaWidgetContents);
+        label_72->setObjectName(QStringLiteral("label_72"));
+        label_72->setGeometry(QRect(30, 420, 16, 20));
+        label_74 = new QLabel(scrollAreaWidgetContents);
+        label_74->setObjectName(QStringLiteral("label_74"));
+        label_74->setGeometry(QRect(80, 420, 81, 20));
+        label_73 = new QLabel(scrollAreaWidgetContents);
+        label_73->setObjectName(QStringLiteral("label_73"));
+        label_73->setGeometry(QRect(180, 420, 241, 20));
+        pushButton_38 = new QPushButton(scrollAreaWidgetContents);
+        pushButton_38->setObjectName(QStringLiteral("pushButton_38"));
+        pushButton_38->setGeometry(QRect(430, 410, 41, 31));
+        pushButton_38->setIcon(icon5);
+        pushButton_38->setIconSize(QSize(30, 30));
+        checkBox_20 = new QCheckBox(scrollAreaWidgetContents);
+        checkBox_20->setObjectName(QStringLiteral("checkBox_20"));
+        checkBox_20->setGeometry(QRect(520, 450, 21, 31));
+        checkBox_20->setIconSize(QSize(30, 30));
+        checkBox_20->setChecked(true);
+        label_76 = new QLabel(scrollAreaWidgetContents);
+        label_76->setObjectName(QStringLiteral("label_76"));
+        label_76->setGeometry(QRect(180, 460, 241, 20));
+        pushButton_39 = new QPushButton(scrollAreaWidgetContents);
+        pushButton_39->setObjectName(QStringLiteral("pushButton_39"));
+        pushButton_39->setGeometry(QRect(430, 450, 41, 31));
+        pushButton_39->setIcon(icon5);
+        pushButton_39->setIconSize(QSize(30, 30));
+        label_77 = new QLabel(scrollAreaWidgetContents);
+        label_77->setObjectName(QStringLiteral("label_77"));
+        label_77->setGeometry(QRect(80, 460, 81, 20));
+        label_75 = new QLabel(scrollAreaWidgetContents);
+        label_75->setObjectName(QStringLiteral("label_75"));
+        label_75->setGeometry(QRect(30, 460, 31, 20));
+        scrollArea->setWidget(scrollAreaWidgetContents);
+
+        retranslateUi(Form);
+
+        QMetaObject::connectSlotsByName(Form);
+    } // setupUi
+
+    void retranslateUi(QWidget *Form)
+    {
+        Form->setWindowTitle(QApplication::translate("Form", "Learn Page", 0));
+        pushButton_3->setText(QApplication::translate("Form", "HOME", 0));
+        label->setText(QString());
+        label_2->setText(QApplication::translate("Form", "Copyright \302\251 Taranvir Bola, Liam Peel, Keiron Hushon", 0));
+        pushButton_4->setText(QApplication::translate("Form", "DISCOVER", 0));
+        pushButton_5->setText(QApplication::translate("Form", "LEARN", 0));
+        label_3->setText(QString());
+        lineEdit->setText(QString());
+        lineEdit->setPlaceholderText(QApplication::translate("Form", "Search", 0));
+        pushButton->setText(QApplication::translate("Form", "Library", 0));
+        pushButton_2->setText(QApplication::translate("Form", "Student Services", 0));
+        pushButton_6->setText(QApplication::translate("Form", "Printer Credits", 0));
+        pushButton_7->setText(QApplication::translate("Form", "OneDrive", 0));
+        pushButton_8->setText(QApplication::translate("Form", "eMail", 0));
+        label_4->setText(QApplication::translate("Form", "LOG OUT", 0));
+        pushButton_10->setText(QString());
+        label_5->setText(QApplication::translate("Form", "Joe Bloggs", 0));
+        pushButton_9->setText(QString());
+        pushButton_11->setText(QString());
+        pushButton_12->setText(QString());
+        pushButton_13->setText(QString());
+        dateTimeEdit->setSpecialValueText(QString());
+        dateTimeEdit->setDisplayFormat(QApplication::translate("Form", "dd/MM/yyyy HH:mm", 0));
+        label_6->setText(QApplication::translate("Form", "Library", 0));
+        lineEdit_2->setPlaceholderText(QApplication::translate("Form", "Search Library", 0));
+        pushButton_14->setText(QApplication::translate("Form", "BOOK\n"
+"CHARGES", 0));
+        pushButton_15->setText(QApplication::translate("Form", "BOOK\n"
+"LOANS", 0));
+        pushButton_16->setText(QApplication::translate("Form", "OPENING\n"
+"HOURS", 0));
+        pushButton_17->setText(QApplication::translate("Form", "ROOM\n"
+"BOOKING", 0));
+        pushButton_18->setText(QApplication::translate("Form", "RESERVED\n"
+"BOOKS", 0));
+        pushButton_19->setText(QApplication::translate("Form", "HELP", 0));
+        label_7->setText(QApplication::translate("Form", "Modules", 0));
+        checkBox->setText(QString());
+        label_8->setText(QApplication::translate("Form", "Semester", 0));
+        label_9->setText(QApplication::translate("Form", "Code", 0));
+        label_10->setText(QApplication::translate("Form", "Name", 0));
+        label_11->setText(QApplication::translate("Form", "Exam Papers", 0));
+        label_12->setText(QApplication::translate("Form", "Available", 0));
+        label_13->setText(QApplication::translate("Form", "1", 0));
+        label_14->setText(QApplication::translate("Form", "COMP2011", 0));
+        label_15->setText(QApplication::translate("Form", "Web App Development", 0));
+        pushButton_20->setText(QString());
+        label_16->setText(QApplication::translate("Form", "Systems Thinking", 0));
+        label_17->setText(QApplication::translate("Form", "COMP2921", 0));
+        pushButton_21->setText(QString());
+        checkBox_2->setText(QString());
+        label_18->setText(QApplication::translate("Form", "1", 0));
+        label_19->setText(QApplication::translate("Form", "Algorithms 1", 0));
+        checkBox_3->setText(QString());
+        label_20->setText(QApplication::translate("Form", "1", 0));
+        pushButton_22->setText(QString());
+        label_21->setText(QApplication::translate("Form", "COMP2711", 0));
+        label_22->setText(QApplication::translate("Form", "Operating Systems", 0));
+        checkBox_4->setText(QString());
+        label_23->setText(QApplication::translate("Form", "1", 0));
+        pushButton_23->setText(QString());
+        label_24->setText(QApplication::translate("Form", "COMP2211", 0));
+        label_25->setText(QApplication::translate("Form", "User Interfaces", 0));
+        checkBox_5->setText(QString());
+        label_26->setText(QApplication::translate("Form", "1", 0));
+        pushButton_24->setText(QString());
+        label_27->setText(QApplication::translate("Form", "COMP2811", 0));
+        label_28->setText(QApplication::translate("Form", "Social and Mobile Web Development", 0));
+        checkBox_6->setText(QString());
+        label_29->setText(QApplication::translate("Form", "2", 0));
+        pushButton_25->setText(QString());
+        label_30->setText(QApplication::translate("Form", "COMP2021", 0));
+        label_31->setText(QApplication::translate("Form", "2", 0));
+        pushButton_26->setText(QString());
+        label_32->setText(QApplication::translate("Form", "COMP2911", 0));
+        label_33->setText(QApplication::translate("Form", "Requirements Engineering", 0));
+        checkBox_7->setText(QString());
+        checkBox_8->setText(QString());
+        label_36->setText(QApplication::translate("Form", "Artificial Intelligence", 0));
+        label_34->setText(QApplication::translate("Form", "2", 0));
+        label_35->setText(QApplication::translate("Form", "COMP2611", 0));
+        pushButton_27->setText(QString());
+        checkBox_9->setText(QString());
+        label_37->setText(QApplication::translate("Form", "2", 0));
+        pushButton_28->setText(QString());
+        label_39->setText(QApplication::translate("Form", "Formal Language & Finite Automata", 0));
+        label_38->setText(QApplication::translate("Form", "COMP2021", 0));
+        checkBox_19->setText(QString());
+        label_72->setText(QApplication::translate("Form", "2", 0));
+        label_74->setText(QApplication::translate("Form", "COMP2211", 0));
+        label_73->setText(QApplication::translate("Form", "Networks", 0));
+        pushButton_38->setText(QString());
+        checkBox_20->setText(QString());
+        label_76->setText(QApplication::translate("Form", "Software Engineering", 0));
+        pushButton_39->setText(QString());
+        label_77->setText(QApplication::translate("Form", "COMP2931", 0));
+        label_75->setText(QApplication::translate("Form", "2/3", 0));
+    } // retranslateUi
+
+};
+
+namespace Ui {
+    class Form: public Ui_Form {};
+} // namespace Ui
+
+QT_END_NAMESPACE
+
+#endif // UI_LEARNPAGE_H
