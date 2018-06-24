@@ -1,0 +1,14 @@
+<div class="container">
+  <h1><b>Login</b></h1>
+  <br>
+  <button class="btn" ng-click="login()">Login with Imgur</button>
+  <br>
+  <h1><i>Some cakes</i></h1>
+  <div class="row">
+    <!-- Shows the photos of a particualar gallery -->
+    <div ng-repeat="photo in viral" class="col-sm-3">
+     <img ng-src="{{photo.link}}" class="img-responsive" style="min-height:200px; max-height:200px; margin-bottom:5px; width:100%;">
+     <h6 style="margin-bottom:10px; text-align:center;"><b>{{photo.views}} Views</b></h6>
+    </div>
+  </div>
+</div>

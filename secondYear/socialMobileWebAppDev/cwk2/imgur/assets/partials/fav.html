@@ -1,0 +1,9 @@
+<div class="container">
+  <h1><b>Your Favourite Photos</b></h1>
+  <div class="row">
+    <div ng-repeat="photo in fav" class="col-sm-3">
+     <img ng-src="{{photo.link}}" class="img-responsive" style="min-height:200px; max-height:200px; margin-bottom:5px; width:100%;">
+     <h6 style="margin-bottom:10px; text-align:center;"><b>{{photo.name}}</b></h6>
+    </div>
+  </div>
+</div>

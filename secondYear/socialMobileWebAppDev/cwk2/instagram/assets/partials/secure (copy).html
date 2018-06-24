@@ -1,0 +1,8 @@
+<h1>Secure Web Page</h1>
+<b>Access Token: </b> {{accessToken}}
+<h1>Images</h1>
+     <div class="row">
+       <div ng-repeat="photo in photos" class="col-lg-2 col-sm-3 col-xs-4">
+         <img ng-src="{{photo.images.standard_resolution.url}}" class="img-responsive">
+       </div>
+      </div> 

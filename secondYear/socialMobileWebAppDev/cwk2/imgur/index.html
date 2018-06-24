@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.27/angular.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.13/angular-ui-router.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-resource/1.2.27/angular-resource.js"></script>
+        <script src="assets/js/app.js"></script>
+    </head>
+    <body ng-app="OAuthDemoApp">
+      <nav class="navbar" role="navigation">
+        <div class="container-fluid">
+
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-toggle">
+                <span class="sr-only">Toggle navigation</span>
+            </button>
+        </div>
+
+          <div class="collapse navbar-collapse" id="nav-toggle">
+            <h1 class="navbar-form navbar-left">
+              Imgur API
+            </h1>
+              <ul class="nav navbar-nav" style= "display:inline;">
+                <!-- The nav bar used  -->
+                <li><a href="/#/login">Login</a></li>
+                <li><a href="/#/secure">Profile</a></li>
+                <li><a href="/#/fav">Favourites</a></li>
+              </ul>
+        </div>
+
+      </div>
+    </nav>
+        <!-- All the specific partial information -->
+        <div ui-view></div>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <script>
+            var callbackResponse = (document.URL).split("#")[1];
+            var responseParameters = (callbackResponse).split("&");
+            var parameterMap = [];
+            for(var i = 0; i < responseParameters.length; i++) {
+                parameterMap[responseParameters[i].split("=")[0]] = responseParameters[i].split("=")[1];
+            }
+            if(parameterMap.access_token !== undefined && parameterMap.access_token !== null) {
+                var instagram = {
+                    oauth: {
+                        access_token: parameterMap.access_token,
+                    }
+                };
+                window.localStorage.setItem("instagram", JSON.stringify(instagram));
+                window.location.href = "http://localhost:8000/index.html#/secure";
+            } else {
+                alert("Problem authenticating");
+            }
+        </script>
+    </head>
+    <body>Redirecting...</body>
+</html>
