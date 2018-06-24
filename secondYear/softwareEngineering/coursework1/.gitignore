@@ -1,0 +1,8 @@
+#User-specific stuff:
+.idea/
+
+bin/
+doc/
+out/
+
+*.iml
