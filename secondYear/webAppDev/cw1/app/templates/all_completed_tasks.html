@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+  <h1>All Completed Tasks</h1>
+  {% for task in complete%}
+        <div id="title"> <h2>{{ task.title }}</h2> </div>
+        <div id="desc"> <p>{{ task.description }}</p> </div>      <!--  displays a records values -->
+        <div id="desc"> <p>{{ task.date }}</p> </div>
+        <div class ="wrapper">
+        <div id="remove" ><a href="{{ url_for('remove', id=task.id)}}">Remove Task</a></div>  <!--  button to remove record -->
+        </div>
+        <hr>
+  {%endfor%}
+{% endblock %}

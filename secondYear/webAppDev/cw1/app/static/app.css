@@ -1,0 +1,103 @@
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;             /*css for lists*/
+    background-color: #333;
+}
+
+li{
+    float: left;            /*style for lists row*/
+    font-family: Lucida Console, Monaco, monospace;
+}
+
+li a{
+    display: block;
+    color: white;             /*css for list href*/
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active){        /*css for when it is active*/
+    background-color: #111;
+}
+
+.form{                          /*css for form*/
+    text-align: center;
+}
+
+textarea{
+    width: 700px;               /*css for text area box*/
+    height: 100px;
+    padding-top: -10px;
+}
+
+h4{
+  text-align: center;                                   /*css for header4*/
+  font-family: Tahoma, Geneva, sans-serif;
+}
+
+h1{                                 /*css for header1*/
+  text-align: center;
+  font-family: Lucida Console, Monaco, monospace;
+}
+
+#title{
+  text-align: center;
+  color: red;                                 /*css for title id*/
+  font-family: Lucida Console, Monaco, monospace;
+}
+
+#desc{
+  text-align: center;                           /*css for description*/
+  color: black;
+  font-family: Lucida Console, Monaco, monospace;
+}
+
+#completed{
+  border: none;
+  border-radius: 4px;                 /*css for completed  button*/
+  color: white;
+  font-family: Lucida Console, Monaco, monospace;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 1px 1px;
+  cursor: pointer;
+  background-color: black;
+}
+
+#remove{
+  border: none;
+  border-radius: 4px;                 /*css for remove  button*/
+  color: white;
+  font-family: Lucida Console, Monaco, monospace;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 1px 1px;
+  cursor: pointer;
+  background-color: black;
+}
+.button {
+    border: none;
+    border-radius: 4px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;             /*css for homepage  button*/
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: #008CBA;/* Blue */
+}
+.wrapper {
+    text-align: center;               /*css for wrapper for  button*/
+    padding-top: 15px;
+}

@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% with messages = get_flashed_messages() %}
+  {% if messages %}
+    <ul>
+    {% for message in messages %}
+        <li>{{ message }} </li>
+    {% endfor %}
+    </ul>
+  {% endif %}
+{% endwith %}
+{% block content %}
+<h1>Create Task</h1>
+<form class ="form "action="" method="post" name="create_task">
+    {{ form.hidden_tag() }}
+    <p>
+       <h4>Title:</h4>                        <!--  Form input for title with validation-->
+       {{ form.number1 }}<br>
+       {% for error in form.number1.errors %}
+         <span style="color: red;">[{{ error }}]</span>
+       {% endfor %}<br>
+    </p>
+    <p>
+      <h4>Task:</h4>                                        <!--  Form input for description with validation-->
+      {{ form.number2 }}<br>
+    {% for error in form.number2.errors %}
+      <span style="color: red;">[{{ error }}]</span>
+    {% endfor %}<br>
+    </p>
+    <p><input type="submit" value="Create Task"></p>              <!--  Submit Button-->
+</form>
+{% endblock %}
