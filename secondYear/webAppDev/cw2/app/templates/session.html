@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Login to Page</h1>
+<form class ="form" action="" method="post">
+    {{ form.hidden_tag() }}
+       {{ form.value (placeholder='Username')}}<br>                         <!--First input box and message if not input -->
+    {% for error in form.value.errors %}
+      <span style="color: red;">[{{ error }}]</span>
+    {% endfor %}<br>
+       {{ form.pw (placeholder='Password')}}<br>                            <!--Second input box and message if not input -->
+    {% for error in form.pw.errors %}
+      <span style="color: red;">[{{ error }}]</span>
+    {% endfor %}<br>
+    <input type="submit" value="Login">
+    <p>
+      <a href="/signup">Sign Up</a><br>
+      <a href="/password">Change Password</a>
+    </p>
+</form>
+{% if message %}
+  <p style="color: red; width:100%; text-align:center;">{{ message }}</p>           <!--Message if wrong user input -->        
+{% endif %}
+{% endblock %}

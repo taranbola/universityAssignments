@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  {% if title %}
+      <title>{{ title }}</title>
+      {% else %}
+      <title> No title specified</title>
+      {% endif %}
+  <link rel="stylesheet" href="static/app.css">
+  <link rel="stylesheet" href="https://getbootstrap.com/dist/css/bootstrap.min.css">    <!---Stylesheets needed for html  -->
+  <link href="sticky-footer.css" rel="stylesheet">
+  </head>
+  <body>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/create_task">Create Task</a></li>
+      <li><a href="/input_queue">Input Queue</a></li>
+      <li><a href="/analysis">Analysis</a></li>
+      <li><a href="/development">Development</a></li>                          <!--- Navigation bar  -->
+      <li><a href="/build_ready">Build Ready</a></li>
+      <li><a href="/test">Testing</a></li>
+      <li><a href="/release_ready">Release Ready</a></li>
+      <div id="right"><li><a href="/unsetvariable">Log Out</a></li></div>
+    </ul>
+
+    <div>
+      {% block content %}{% endblock %}
+    </div>
+    <footer class="footer">
+      <div class="container">                       <!--  bootstrap footer -->
+        <span class="text-muted">                All Rights Reserved - - - - - - &copy Taranvir Bola sc16tb</span>
+      </div>
+    </footer>
+  </body>
+</html>

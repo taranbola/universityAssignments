@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h1>Kanban Software Planning Board</h1>
+<form class ="form "action="" method="post" name="create_task">
+    {{ form.hidden_tag() }}
+    <p>
+      <h4>Add Post It Note</h4>                                        <!--  Form input for description with validation-->
+      {{form.number2(placeholder='Task Description') }}<br>
+    </p>
+    <input type="submit" value="Add Note">              <!--  Submit Button-->
+</form>
+{% endblock %}

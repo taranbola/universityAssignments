@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+  <h1>Development</h1>
+  {% for task in kanban3 %}
+        <div id="desc"> <p>{{ task.description }}</p> </div>            <!--  displays a records values -->
+        <div id="desc"> <p>{{ task.date }}</p> </div>
+        <div class ="wrapper">
+        <div id="completed" ><a href="{{ url_for('changeto4',id=task.taskID)}}">Ready to Build</a></div>  <!--  button to to make record 4-->
+        </div>
+        <hr>
+  {%endfor%}
+{% endblock %}

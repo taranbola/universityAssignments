@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+  <h1>Sign Up</h1>
+  <form class ="form" action="" method="post">
+      {{ signform.hidden_tag() }}
+         {{ signform.username (placeholder='Username')}}<br>              <!--First input box and message if not input -->
+      {% for error in signform.username.errors %}
+        <span style="color: red;">[{{ error }}]</span>
+      {% endfor %}<br>
+
+          {{ signform.password (placeholder='Password')}}<br>             <!--Second input box and message if not input -->
+       {% for error in signform.username.errors %}
+         <span style="color: red;">[{{ error }}]</span>
+       {% endfor %}<br>
+
+      <p><input type="submit" value="Login"></p>
+  </form>
+  {% if message %}
+    <p style="color: red; width:100%; text-align:center;">{{ message }}</p>       <!--Message if username taken-->
+  {% endif %}
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+  <h1>Input Queue</h1>
+  {% for task in kanban1 %}
+        <div id="desc"> <p>{{ task.description }}</p> </div>            <!--  displays a records values -->
+        <div id="desc"> <p>{{ task.date }}</p> </div>
+        <div class ="wrapper">
+        <div id="completed" ><a href="{{ url_for('changeto2', id=task.taskID)}}">Take to Analysis</a></div>  <!--  button to to make record 2-->
+        </div>
+        <hr>
+  {%endfor%}
+{% endblock %}
