@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+{% block content %}
+    <br>
+    <hr>
+    <hr>
+
+    <br>
+    <div class="row" id="title">
+        <div class="col-sm-12">
+            <h1 style="text-align: center;">Sign <span class="highlight"> In </span><h1>
+        </div>
+    </div>
+    <hr>
+    <br>
+
+    <div class="row" id="login">
+        <div class="col-sm-4">
+
+        </div>
+        <div class="col-sm-4">
+            <div class="panel panel-default">
+                <form class ="signUp" action="" method="post">
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                            {{ sessionform.hidden_tag() }}
+                            {{ sessionform.login (placeholder='Email',class_="form-control")}}<br>              <!--First input box and message if not input -->
+                            {% for error in sessionform.login.errors %}
+                            <span style="color: red;">[{{ error }}]</span>
+                            {% endfor %}
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        {{ sessionform.password (placeholder='Password',class_="form-control")}}<br>             <!--Second input box and message if not input -->
+                        {% for error in sessionform.password.errors %}
+                        <span style="color: red;">[{{ error }}]</span>
+                        {% endfor %}
+                    </div>
+                    {% if message %}
+                      <p style="color: red; width:100%; text-align:center;">{{ message }}</p>           <!--Message if wrong user input -->
+                    {% endif %}
+                    <div class="form-group">
+                        <h4 class="text-center"><input type="submit" class="btn btn-default" value="Login">
+                          <br><br>
+                          <a class="text-center" href="/signup">Sign Up</a><br>
+                          <a class="text-center" href="/changepassword">Change Password</a>
+                        </h4>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="col-sm-4">
+        </div>
+
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <hr>
+    <hr>
+
+{% endblock %}

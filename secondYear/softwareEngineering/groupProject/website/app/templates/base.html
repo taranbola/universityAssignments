@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang = "en-GB">
+<head>
+    <meta charset = "utf-8">
+    {% if title %}
+    <title> {{ title }} </title>
+    {% else %}
+    <title> No title specified </title>
+    {% endif %}
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/styles.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/bootstrap.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/bootstrap-glyphicons.css')}}">
+    <script src="{{url_for('static', filename='js/bootstrap.min.js')}}"></script>
+    <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="container" id="main">
+
+        <div class="navbar navbar-fixed-top">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-toggle">
+                    <span class="sr-only">Toggle Nav</span>
+                </button>
+            </div>
+
+            <div class="container">
+                <a href="/" class="navbar-brand"><span class="highlight">OSPREY</span> CINEMA</a>
+                <div class="nav-collapse collapse navbar-responsive-collapse" id="nav-toggle">
+                    <ul class="nav navbar-nav">
+                        <li><a href="/">Home</a></li>
+                        <li><a href = "/whatson"> What's On </a></li>
+                    </ul>
+                    <div class="navbar-form pull-right">
+                        <!-- <form class="navbar-form pull-right" action="/search"> -->
+                        <a href="/search"><button type="submit" class="btn btn-default" ><span class="glyphicon glyphicon-search"></span></button></a>
+                        <!-- </form> -->
+                    </div>
+
+                    <ul class="nav navbar-nav pull-right">
+                        <li class="dropdown">
+                            <!-- <a class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> My Account <strong class="caret"></strong></a> -->
+                            <!-- <ul class="dropdown-menu"> -->
+                            <li><a href="/login">Log In</a></li>
+                            <li><a href="/signup">Create Account</a></li>
+                            <li><a href="/myaccount"><span class="glyphicon glyphicon-refresh"></span> Update Account </a> </li>
+                            <li class="divider"></li>
+                            <li><a href="/unsetvariable"><span class="glyphicon glyphicon-off"></span> Sign out</a></li>
+
+                            <!-- </ul> -->
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        {% block content %}{% endblock %}<br>
+        <section>
+            <div>
+                {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                {% for message in messages %}
+                <p>{{ message }}</p><br>
+                {% endfor %}
+                {% endif %}
+                {% endwith %}
+            </div>
+        </section>
+
+        <br>
+    </div>
+    <footer>
+        <div class="row">
+            <div class="col-sm-12">
+                <p class="text-center">Team Osprey, Copyright  &copy; 2018</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>window.jQuery || document.write('<script src="static/js/jquery-1.8.2.min.js"><\/script>')</script>
+
+    <script src="static/js/bootstrap.min.js"></script>
+
+</body>
+</html>

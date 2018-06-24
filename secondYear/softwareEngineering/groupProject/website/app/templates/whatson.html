@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <br>
+    <hr>
+    <hr>
+    <div class="row" id="spaceFiller">
+        <div class="col-sm-12">
+            <h1 class="text-center"> Whats <span class="highlight"> On </span> </h1>
+        </div>
+
+    </div>
+    <div class="movies" id="allMovies">
+
+      {% for each in film %}
+        <hr>
+        <div class="row">
+            <a href="/movie/{{each.film_id}}"> <div class="col-sm-6" style="text-align:center;">
+                <div class="pull-center">
+                    <div class="hovereffect">
+                        <img src="./static/img/{{each.film_poster}}" alt="Film Poster" class="img-rounded">
+                        <div class="overlay">
+                            <!-- <a href="/movie/{{each.film_id}}"> </a> -->
+                            <!-- <a class="info" href="#"> Book Here </a> -->
+                        </div>
+                    </div>
+                    <!-- <img src="./static/img/{{each.film_poster}}" alt="Film Poster" class="img-rounded"> -->
+                </div>
+            </div></a>
+
+            <div class="col-sm-6">
+                <h3> {{ each.film_name}}</h3>
+                <hr>
+                <h4>Rating: <span class="highlight">{{each.film_age_rating}}</span></h4>
+                <p>{{ each.film_description}}</p>
+                <p>Length: {{ each.film_runtime}} minutes</p>
+                <p>Director: {{ each.film_director}} </p>
+                <a href="/movie/{{each.film_id}}"><button type="button" class="btn">Book Tickets</button> </a>
+            </div>
+        </div>
+      {%endfor%}
+
+
+        <hr>
+        <hr>
+    </div>
+    </div>
+{% endblock %}

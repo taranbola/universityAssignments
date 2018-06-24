@@ -1,0 +1,63 @@
+.root{
+    -fx-font-size: 16pt;
+    -fx-font-family: "Courier New";
+    -fx-background: rgb(247, 245, 244);
+}
+
+* {
+    -fx-primary: rgb(75, 75, 75);
+    -fx-secondary: rgb(104, 104, 104);
+    /*-fx-secondary: rgb(0, 43, 209);*/
+}
+}
+.seatButton{
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-text-fill: rgb(255, 255, 255);
+    -fx-background-color: rgb(191, 191, 191);
+}
+
+.seatButton:hover{
+    -fx-border-color: -fx-secondary;
+    -fx-background-color: -fx-secondary;
+
+}
+
+.loginButton{
+    -fx-border-color: -fx-secondary;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-background-color: -fx-primary;
+}
+
+.loginButton:hover{
+    -fx-border-color: -fx-secondary;
+    -fx-background-color: -fx-secondary;
+
+}
+
+.buttonVIP:hover{
+    -fx-border-color: -fx-primary;
+    -fx-background-color: -fx-secondary;
+
+}
+
+.buttonVIP{
+    -fx-background-color: rgb(186, 0, 0);
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-text-fill: rgb(255, 255, 255);
+
+
+}
+
+.textField {
+    -fx-text-fill: -fx-primary;
+    -fx-font-size : 13pt;
+    -fx-focus-color: -fx-secondary;
+    -fx-border-color: -fx-secondary;
+}
+
+.label {
+    -fx-border-color: rgb(247, 245, 244);
+}

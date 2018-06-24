@@ -1,0 +1,52 @@
+.root{
+    -fx-font-size: 16pt;
+    -fx-font-family: "Courier New";
+    -fx-background: rgb(247, 245, 244);
+}
+
+* {
+    -fx-primary: rgb(75, 75, 75);
+    -fx-secondary: rgb(104, 104, 104);
+    /*-fx-secondary: rgb(0, 43, 209);*/
+}
+.button{
+  -fx-border-color: -fx-secondary;
+  -fx-border-radius: 20px;
+  -fx-background-radius: 20px;
+  -fx-background-color: -fx-primary;
+  -fx-text-fill: rgb(255, 255, 255);
+
+}
+
+
+.loginButton{
+    -fx-border-color: -fx-secondary;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-background-color: -fx-primary;
+}
+
+.button:hover{
+    -fx-border-color: -fx-primary;
+    -fx-background-color: rgb(142, 166, 206);
+    /*-fx-background-color: rgb(44, 81, 140);*/
+    /*-fx-background-color: rgb(66, 134, 244);*/
+    -fx-text-fill: rgb(255, 255, 255);
+}
+
+
+
+.textField {
+    -fx-text-fill: rgb(0, 0, 0);
+    -fx-font-size : 25pt;
+
+    -fx-background-color: -fx-primary;
+}
+
+.text {
+    -fx-text-fill: rgb(0, 0, 0);
+}
+
+/* .label {
+    -fx-border-color: rgb(0, 43, 209);
+} */

@@ -1,0 +1,96 @@
+{% extends "base.html" %}
+{% block content %}
+<br>
+<br>
+<br>
+<div class="row" id="title">
+    <div class="col-sm-12">
+        <h1 style="text-align: center;">Buy <span class="highlight"> Tickets  </span><h1>
+    </div>
+</div>
+<hr>
+<hr>
+
+<div class="col-sm-5">
+    <h3> Order Details </h3>
+    <h4> Film: {{film.film_name}} </h4>
+    <h4> Screening Date: {{screening.screening_date}} </h4>
+    <h4> Screening Time: {{screening.screening_time.strftime('%H:%M') }} </h4>
+    <h4> Seat Number: {{seat.seat_id}} </h4>
+    <h4> Price: £{{ price }} </h4>
+</div>
+
+<div class="col-sm-1">
+</div>
+
+<div class="col-sm-5">
+    {% if age %}
+      <h3><span style="color: red;">{{age}}</span></h3>
+    {% elif cardFind %}
+      <form class ="checkoutform" action="" method="post">
+      {{ checkoutform.hidden_tag() }}
+
+        <div class="form-group">
+            <p>All values correct. Do you wanna checkout?</p> {{checkoutform.check (class_="checkbox")}}</p><br>
+            <p><input type="submit" class="btn btn" value="Checkout"></p>
+        </div>
+
+      </form>
+    {% else %}
+      <form class ="cardform" action="" method="post">
+        {{ cardform.hidden_tag() }}
+
+          <div class="form-group">
+              <label for="number">Card Number:</label>
+              {% for error in cardform.number.errors %}
+              <span style="color: red;">[{{ error }}]</span>
+              {% endfor %}
+              {% if message %}
+                <p style="color: red; width:100%; text-align:center;">{{ message }}</p>           <!--Message if wrong user input -->
+              {% endif %}
+              {{ cardform.number (placeholder='Card Number',class_="form-control")}}<br>              <!--First input box and message if not input -->
+          </div>
+
+          <div class="form-group">
+              <label for="expirymonth">Expiry Month:</label>
+              {% for error in cardform.expirymonth.errors %}
+                <span style="color: red;">[{{ error }}]</span>
+              {% endfor %}
+              {{ cardform.expirymonth (placeholder='Select Card Expiry Month',class_="form-control")}}<br>              <!--First input box and message if not input -->
+          </div>
+
+          <div class="form-group">
+              <label for="expiryyear">Expiry Year:</label>
+              {% for error in cardform.expiryyear.errors %}
+                <span style="color: red;">[{{ error }}]</span>
+              {% endfor %}
+              {{ cardform.expiryyear (placeholder='Select Card Expiry Year',class_="form-control")}}<br>              <!--First input box and message if not input -->
+          </div>
+
+          <div class="form-group">
+              <label for="cvv">CVV:</label>
+              {% for error in cardform.cvv.errors %}
+                <span style="color: red;">[{{ error }}]</span>
+              {% endfor %}
+              {{ cardform.cvv (placeholder='CVV or Card Verification Value',class_="form-control")}}<br>              <!--First input box and message if not input -->
+          </div>
+
+          <div class="form-group">
+            <p><input type="submit" class="btn btn" value="Checkout"></p>
+          </div>
+        </form>
+
+      {% endif %}
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+{% endblock %}

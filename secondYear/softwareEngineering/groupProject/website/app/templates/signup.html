@@ -1,0 +1,128 @@
+{% extends "base.html" %}
+{% block content %}
+    <br>
+    <!-- <div class="container"> -->
+        <hr>
+        <hr>
+
+
+        <div class="row" id="title">
+            <div class="col-sm-4">
+
+            </div>
+
+            <div class="col-sm-4">
+                <h1 style="text-align: center;">Sign <span class="highlight"> Up </span></h1>
+            </div>
+        </div>
+        <hr>
+
+        <div class="row" id="main">
+
+
+            <div class="col-sm-5">
+                <form class ="signUp" action="" method="post">
+                    {{ signform.hidden_tag() }}
+                        <div class="form-group">
+                            <label for="email">Forname:</label>
+                            {% for error in signform.firstname.errors %}
+                            <span style="color: red;">[{{ error }}]</span>
+                            {% endfor %}
+                            {{ signform.firstname (placeholder='Firstname',class_="form-control")}}<br>              <!--First input box and message if not input -->
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Surname:</label>
+                            {% for error in signform.surname.errors %}
+                            <span style="color: red;">[{{ error }}]</span>
+                            {% endfor %}
+                            {{ signform.surname (placeholder='Surname',class_="form-control")}}<br>             <!--Second input box and message if not input -->
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Date Of Birth:</label>
+                            {% for error in signform.dob.errors %}
+                            <span style="color: red;">[{{ error }}]</span>
+                            {% endfor %}
+                            {{ signform.dob (placeholder='Date of Birth (YYYY-MM-DD)',class_="form-control")}}<br>             <!--Second input box and message if not input -->
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Address:</label>
+                            {% for error in signform.address.errors %}
+                          <span style="color: red;">[{{ error }}]</span>
+                          {% endfor %}
+                          {{ signform.address (placeholder='Address',class_="form-control")}}<br>             <!--Second input box and message if not input -->
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Postcode:</label>
+                            {% for error in signform.postcode.errors %}
+                            <span style="color: red;">[{{ error }}]</span>
+                            {% endfor %}
+                            {{ signform.postcode (placeholder='Postcode',class_="form-control")}}<br>             <!--Second input box and message if not input -->
+                        </div>
+
+            </div>
+            <div class="col-sm-1">
+
+            </div>
+            <div class="col-sm-5">
+                <div class="form-group">
+                    <label for="email">Mobile:</label>
+                    {% for error in signform.mobile.errors %}
+                    <span style="color: red;">[{{ error }}]</span>
+                    {% endfor %}
+                    {% if message2 %}
+                      <p style="color: red; width:100%; text-align:center;">{{ message2 }}</p>           <!--Message if wrong user input -->
+                    {% endif %}
+                    {{ signform.mobile (placeholder='Mobile',class_="form-control")}}<br>             <!--Second input box and message if not input -->
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    {% for error in signform.email.errors %}
+                     <span style="color: red;">[{{ error }}]</span>
+                    {% endfor %}
+                    {% if message1 %}
+                      <p style="color: red; width:100%; text-align:center;">{{ message1 }}</p>           <!--Message if wrong user input -->
+                    {% endif %}
+                    {{ signform.email (placeholder='Email',class_="form-control")}}<br>             <!--Second input box and message if not input -->
+                </div>
+                <div class="form-group">
+                    <label for="email">Password:</label>
+                    {% for error in signform.password.errors %}
+                    <span style="color: red;">[{{ error }}]</span>
+                    {% endfor %}
+                    {{ signform.password (placeholder='Password',class_="form-control")}}<br>             <!--Second input box and message if not input -->
+                </div>
+                <div class="form-group">
+                    <label for="email">Confirm Password:</label>
+                    {% for error in signform.confirm.errors %}
+                     <span style="color: red;">[{{ error }}]</span>
+                    {% endfor %}
+                    {{ signform.confirm (placeholder='Confirm Password',class_="form-control")}}<br>             <!--Second input box and message if not input -->
+                </div>
+
+                <div class="form-group">
+                    <label for="hint">Hint:</label>
+                    {% for error in signform.hint.errors %}
+                     <span style="color: red;">[{{ error }}]</span>
+                    {% endfor %}
+                    {{ signform.hint (placeholder='Password Hint',class_="form-control")}}<br>             <!--Second input box and message if not input -->
+                </div>
+                <div class="form-group" style="text-align: center;">
+                    <br>
+                    <p><input type="submit" class="btn btn-default" value="Sign Up"></p>
+
+                </div>
+            </div>
+                </form>
+                    {% if message %}
+                    <p style="color: red; width:100%; text-align:center;">{{ message }}</p>       <!--Message if username taken-->
+    <hr>
+    <hr>
+    {% endif %}
+    <!-- </div> -->
+    <!-- {% for each in customer %}
+      <h3> {{ customer.customer_f_name}}</h3>
+    {% endfor %} -->
+    <!-- </div> -->
+  </div>
+{% endblock %}

@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block content %}
+    <br>
+    <hr>
+    <hr>
+    <div class="row">
+    <div class="row" id="customerDetails">
+        <div class="col-sm-6">
+            <h1>My <span class="highlight"> Details </span></h1>
+                <h3>First name: {{customer.customer_f_name}}</h3>
+                <h3>Surname : {{customer.customer_s_name}}</h3>
+                <h3>Address : {{customer.customer_address}}</h3>
+                <h3>Postcode : {{customer.customer_postcode}}</h3>
+                <h3>Mobile No. : {{customer.customer_mobile}}</h3>
+                <h3>Date Of Birth : {{customer.customer_dob}}</h3>
+            <br>
+            <a href="/customer"><button type="button" class="btn">Change Personal Details</button> </a>
+            <h1>Card <span class="highlight"> Details </span></h1>
+                <h3>Card Number: {{'%0.0f'|format(decode(card.card_number)|float)}}</h3>
+                <h3>Card Expiry Date: {{'%0.0f'|format(decode(card.card_expiry)|float)}}</h3>
+                <h3>Card CVV : {{'%0.0f'|format(decode(card.card_cvv)|float)}}</h3>
+            <br>
+            <a href="/card"><button type="button" class="btn">Change Card Details</button> </a>
+        </div>
+        <div class="col-sm-6">
+            <h1>My <span class="highlight"> Bookings </span></h1>
+              {% for each in tickets %}
+                  <h3> Film: {{each.screening.film.film_name}} </h3>
+                  <h3> Seat: {{each.seat_id}}</h3>
+                  <h3> Date: {{each.screening.screening_date}} Time: {{each.screening.screening_time.strftime('%H:%M')}} </h3>
+                  <h3> Screen: {{each.screening.screen_id}} </h3>
+                <hr>
+              {%endfor%}
+              {% for each in film_list %}
+                  {{each}}
+              {%endfor%}
+        </div>
+    </div>
+
+{% endblock %}

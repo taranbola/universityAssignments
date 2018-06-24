@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+{% block content %}
+    <br>
+    <!-- <div class="container"> -->
+        <hr>
+        <hr>
+
+
+        <div class="row" id="title">
+            <div class="col-sm-4">
+
+            </div>
+
+            <div class="col-sm-4">
+                <h1 style="text-align: center;">Customer <span class="highlight"> Details </span></h1>
+            </div>
+        </div>
+        <hr>
+
+        <div class="row" id="main">
+
+
+            <div class="col-sm-5">
+                <form class ="signUp" action="" method="post">
+                    {{ customerform.hidden_tag() }}
+                        <div class="form-group">
+                            <label for="email">Forname:</label>
+                            {% for error in customerform.firstname.errors %}
+                            <span style="color: red;">[{{ error }}]</span>
+                            {% endfor %}
+                            {{ customerform.firstname (placeholder='Firstname',class_="form-control")}}<br>              <!--First input box and message if not input -->
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Surname:</label>
+                            {% for error in customerform.surname.errors %}
+                            <span style="color: red;">[{{ error }}]</span>
+                            {% endfor %}
+                            {{ customerform.surname (placeholder='Surname',class_="form-control")}}<br>             <!--Second input box and message if not input -->
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Date Of Birth:</label>
+                            {% for error in customerform.dob.errors %}
+                            <span style="color: red;">[{{ error }}]</span>
+                            {% endfor %}
+                            {{ customerform.dob (placeholder='Date of Birth (YYYY-MM-DD)',class_="form-control")}}<br>             <!--Second input box and message if not input -->
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Address:</label>
+                            {% for error in customerform.address.errors %}
+                          <span style="color: red;">[{{ error }}]</span>
+                          {% endfor %}
+                          {{ customerform.address (placeholder='Address',class_="form-control")}}<br>             <!--Second input box and message if not input -->
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Postcode:</label>
+                            {% for error in customerform.postcode.errors %}
+                            <span style="color: red;">[{{ error }}]</span>
+                            {% endfor %}
+                            {{ customerform.postcode (placeholder='Postcode',class_="form-control")}}<br>             <!--Second input box and message if not input -->
+                        </div>
+
+            </div>
+            <div class="col-sm-1">
+
+            </div>
+            <div class="col-sm-5">
+                <div class="form-group">
+                    <label for="email">Mobile:</label>
+                    {% for error in customerform.mobile.errors %}
+                    <span style="color: red;">[{{ error }}]</span>
+                    {% endfor %}
+                    {% if message2 %}
+                      <p style="color: red; width:100%; text-align:center;">{{ message2 }}</p>           <!--Message if wrong user input -->
+                    {% endif %}
+                    {{ customerform.mobile (placeholder='Mobile',class_="form-control")}}<br>             <!--Second input box and message if not input -->
+                </div>
+
+                <div class="form-group" style="text-align: center;">
+                    <br>
+                    <p><input type="submit" class="btn btn-default" value="Add Details"></p>
+
+                </div>
+            </div>
+          </form>
+          {% if message %}
+            <p style="color: red; width:100%; text-align:center;">{{ message }}</p>       <!--Message if username taken-->
+          {% endif %}
+  </div>
+{% endblock %}

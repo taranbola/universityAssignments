@@ -1,0 +1,214 @@
+{% extends "base.html" %}
+{% block content %}
+
+<br>
+<hr>
+<hr>
+
+<div class="row" id="title">
+    <br>
+
+<div class="row" id="chosenFilm">
+    <div class="col-6" style="text-align: center;">
+        <img src="../static/img/{{film.film_poster}}" alt="Film Poster" class="img-rounded">
+    </div>
+
+    <div class="col-sm-6" >
+        <h1>{{film.film_name}}</h1>
+        <hr>
+        <h4>Rating: <span class="highlight">{{film.film_age_rating}}</span></h4>
+        <p>{{ film.film_description}}</p>
+        <p>Length: {{ film.film_runtime}} minutes</p>
+        <p>Director: {{ film.film_director}} </p>
+        <hr>
+        <!-- <p> Choose your viewing time: </p> -->
+
+        <!-- <ul class="nav nav-tabs">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">Menu 1</a></li>
+        </ul> -->
+
+      <br>
+    </div>
+</div>
+<br>
+
+<hr>
+<div class="row" id="ticketseatTitle">
+    <div class="col-sm-2">
+    </div>
+    <div class="col-sm-4">
+        <h1> Choose <span class="highlight"> Time </span></h1>
+    </div>
+    <div class="col-sm-6">
+    </div>
+</div>
+<hr>
+<div class="row" id="ticketseat">
+    <div class="col-sm-2">
+    </div>
+
+    <div class="col-sm-4" >
+        <p>Today:</p>
+        {% for each in screening %}
+          {% if timepassed(each.screening_time) == True %}
+          {% else %}
+            <a href="/seatchoice/{{each.screening_id}}"><button type="button" class="btn">{{each.screening_time.strftime('%H:%M')}}</button> </a>
+          {% endif %}
+        {%endfor%}
+        <hr>
+
+        <p>Tomorrow:</p>
+        {% for each in screeningtomorrow %}
+        <a href="/seatchoice/{{each.screening_id}}"><button type="button" class="btn">{{each.screening_time.strftime('%H:%M')}}</button> </a>
+        {%endfor%}
+        <hr>
+
+        {% if screeningplus2 %}
+          <p>{{screeningplus2[0].screening_date}}:</p>
+          {% for each in screeningplus2 %}
+          <a href="/seatchoice/{{each.screening_id}}"><button type="button" class="btn">{{each.screening_time.strftime('%H:%M')}}</button> </a>
+          {%endfor%}
+          <hr>
+        {% endif %}
+
+      </div>
+
+      <div class="col-sm-4" >
+          {% if screeningplus3 %}
+            <p>{{screeningplus3[0].screening_date}}:</p>
+            {% for each in screeningplus3 %}
+            <a href="/seatchoice/{{each.screening_id}}"><button type="button" class="btn">{{each.screening_time.strftime('%H:%M')}}</button> </a>
+            {%endfor%}
+            <hr>
+          {% endif %}
+
+        {% if screeningplus4 %}
+          <p>{{screeningplus4[0].screening_date}}:</p>
+          {% for each in screeningplus4 %}
+          <a href="/seatchoice/{{each.screening_id}}"><button type="button" class="btn">{{each.screening_time.strftime('%H:%M')}}</button> </a>
+          {%endfor%}
+          <hr>
+        {% endif %}
+
+        {% if screeningplus5 %}
+          <p>{{screeningplus5[0].screening_date}}:</p>
+          {% for each in screeningplus5 %}
+          <a href="/seatchoice/{{each.screening_id}}"><button type="button" class="btn">{{each.screening_time.strftime('%H:%M')}}</button> </a>
+          {%endfor%}
+          <hr>
+        {% endif %}
+
+        {% if screeningplus6 %}
+          <p>{{screeningplus6[0].screening_date}}:</p>
+          {% for each in screeningplus6 %}
+            <a href="/seatchoice/{{each.screening_id}}"><button type="button" class="btn">{{each.screening_time.strftime('%H:%M')}}</button> </a>
+          {%endfor%}
+        {% endif %}
+    </div>
+
+    <div class="col-sm-2">
+    </div>
+
+  </div>
+    <br>
+
+    <!-- <div class="times"> -->
+    <!-- <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#tab1">Today</a></li>
+    <li><a  data-toggle="tab" href="#tab2">Tomorrow</a></li>
+    <li><a data-toggle="tab" href="#tab3">Day + 1</a></li>
+    <li><a data-toggle="tab" href="#tab4">Day + 2</a></li>
+    <li><a data-toggle="tab" href="#tab5">Day + 3</a></li>
+    <li><a data-toggle="tab" href="#tab6">Day + 5</a></li>
+    <li><a data-toggle="tab" href="#tab7">Day + 6</a></li>
+</ul> -->
+
+
+<!-- <div class="tab-content">
+<div class="tab-pane in active" id="tab1">
+<h1>dsdfs</h1>
+</div>
+
+<div id="tab2">
+<h4>A Left Floated Picture
+</div>
+<div class="tab-pane fade" id="tab3">
+<h4>A Left Floated Picture
+</div>
+<div class="tab-pane fade" id="tab4">
+<h4>A Left Floated Picture
+</div>
+<div class="tab-pane fade" id="tab5">
+<h4>A Left Floated Picture
+</div>
+<div class="tab-pane fade" id="tab6">
+<h4>A Left Floated Picture
+</div>
+<div class="tab-pane fade" id="tab7">
+<h4>A Left Floated Picture
+</div>
+</div> -->
+
+<!-- <ul class="nav nav-tabs">
+<li class="active"><a href="#">Today</a></li>
+<li><a href="#">Tomorrow</a></li>
+<li><a href="#tab3">Day + 1</a></li>
+<li><a href="#tab4">Day + 2</a></li>
+<li><a href="#tab5">Day + 3</a></li>
+<li><a href="#tab6">Day + 5</a></li>
+<li><a href="#tab7">Day + 6</a></li>
+</ul>
+
+<div class="tab-content">
+<div class="active" id="tab1">
+<h1>dsdfs</h1>
+</div>
+
+<div id="tab2">
+<h4>A Left Floated Picture
+</div>
+<divid="tab3">
+<h4>A Left Floated Picture
+</div>
+<div id="tab4">
+<h4>A Left Floated Picture
+</div>
+<div id="tab5">
+<h4>A Left Floated Picture
+</div>
+<div id="tab6">
+<h4>A Left Floated Picture
+</div>
+<div id="tab7">
+<h4>A Left Floated Picture
+</div>
+</div>
+</div> -->
+
+<!-- <div class="tabbable">
+<ul class="nav nav-tabs">
+<li class="active"><a href="#tab1" data-toggle="tab">Section 1</a></li>
+<li><a href="#tab2" data-toggle="tab">Section 2</a></li>
+</ul>
+<div class="tab-content">
+<div class="tab-pane active" id="tab1">
+<p>hiuxda</p>
+</div><!end tab-pane -->
+
+<!-- <div class="tab-pane" id="tab2">
+<p>sdffsd</p> -->
+<!-- </div><! end tab-pane -->
+<!-- </div><! end tab-content -->
+<!-- </div><! end tabbable -->
+
+
+</div>
+<br>
+<br>
+<br>
+<br>
+<hr>
+<hr>
+
+{% endblock %}

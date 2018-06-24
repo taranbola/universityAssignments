@@ -1,0 +1,323 @@
+{% extends "base.html" %}
+{% block content %}
+    <br>
+    <hr>
+    <hr>
+    <div class="row" id="title">
+        <div class="col-sm-12">
+            <h1 style="text-align: center;">Your <span class="highlight"> Booking </span><h1>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="row" id="chosenFilm">
+        <div class="col-sm-6" style="text-align: center;">
+            <img src="../static/img/{{film.film_poster}}">
+        </div>
+
+        <div class="col-sm-6">
+            <h3 class="pull-left"><span class="highlight"> Now Booking </span></h3>
+            <br>
+            <br>
+            <hr>
+            <h3> {{film.film_name}} </h3>
+            <p> Rating: <span class="highlight"> {{film.film_age_rating}} </span><p>
+            <p> Screen: {{screening.screen_id}}<p>
+            <p> Date: {{screening.screening_date}}<p>
+            <p> Time: {{screening.screening_time.strftime('%H:%M')}}<p>
+        </div>
+    </div>
+    <br>
+    <hr>
+    <hr>
+
+    <div class="row" id="ticketseat">
+        <!-- <div class="panel panel-default"> -->
+            <div class="col-sm-4">
+                <h1> Choose <span class="highlight"> Ticket </span></h1>
+                <hr>
+
+                <form>
+                    <div class="form-group">
+                        <label for="sel1">Adult (20+ years):</label>
+                        <select class="form-control" id="sel1">
+                            <option>0</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                            <option>11</option>
+                            <option>12</option>
+                            <option>13</option>
+                            <option>14</option>
+                            <option>15</option>
+                        </select>
+                        <br>
+                        <label for="sel2">Teen (17-19 years):</label>
+                        <select class="form-control" id="sel2">
+                            <option>0</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                            <option>11</option>
+                            <option>12</option>
+                            <option>13</option>
+                            <option>14</option>
+                            <option>15</option>
+                        </select>
+                        <br>
+                        <label for="sel3">Child (16 years and below):</label>
+                        <select class="form-control" id="sel3">
+                            <option>0</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                            <option>11</option>
+                            <option>12</option>
+                            <option>13</option>
+                            <option>14</option>
+                            <option>15</option>
+
+                        </select>
+                        <br>
+                        <label for="sel4">Pensioner (65+ years):</label>
+                        <select class="form-control" id="sel4">
+                            <option>0</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                            <option>11</option>
+                            <option>12</option>
+                            <option>13</option>
+                            <option>14</option>
+                            <option>15</option>
+                        </select>
+                        <br>
+                        <label for="sel5">Student:</label>
+                        <p> Provide your valid student ID upon entry. </p>
+                        <select class="form-control" id="sel5">
+                            <option>0</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                            <option>11</option>
+                            <option>12</option>
+                            <option>13</option>
+                            <option>14</option>
+                            <option>15</option>
+                        </select>
+
+                        <hr>
+
+                        <label for="sel5"><span class="highlight">VIP:</span></label>
+                        <select class="form-control" id="sel5">
+                            <option>0</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                            <option>11</option>
+                            <option>12</option>
+                            <option>13</option>
+                            <option>14</option>
+                            <option>15</option>
+                        </select>
+                        <hr>
+                    </div>
+                </form>
+
+            </div>
+
+            <div class="col-sm-3">
+                <h1> Further <span class="highlight"> Details </span></h1>
+
+                <hr>
+                <label> Adults: </label>
+                <p> Price: £5.00</p>
+                <hr>
+
+                <label> Teen: </label>
+                <p> Price: £5.00</p>
+                <hr>
+
+                <label> Children: </label>
+                <p> Price: £5.00</p>
+                <hr>
+
+                <label> Pensioner: </label>
+                <p> Price VIP: £6.00</p>
+                <p> Price Normal: £3.50</p>
+                <hr>
+
+                <label> Student: </label>
+                <p> Price: £5.00</p>
+
+                <hr>
+                <label> VIP: </label>
+                <p> Price: £7.50</p>
+                <li> Relax in super spacious seats </li>
+                <li> Extra room to stretch out </li>
+                <li> Enjoy the optimum viewing location </li>
+                <hr>
+
+
+
+
+            </div>
+
+            <div class="col-sm-5 text-center">
+                <h1> Choose <span class="highlight"> Seat </span></h1>
+                <hr>
+                    {% for each in seats[0:9] %}
+                        {% if seatfinder(each,screening) == True %}
+                          <button type="button" class="btn btn-secondary" >---</button>
+                         {% else %}
+                          <a href="/checkout/{{screening.screening_id}}/{{each.seat_id}}"><button type="button" class="btn btn-danger" > &nbsp;{{each.seat_id}}&nbsp;</button><a/>
+                        {% endif %}
+                    {% endfor %}
+
+                    <br>
+                    <hr>
+
+                    {% for each in seats[9:19] %}
+                      {% if seatfinder(each,screening) == True %}
+                        <button type="button" class="btn btn-secondary" >---</button>
+                       {% else %}
+                        <a href="/checkout/{{screening.screening_id}}/{{each.seat_id}}"><button type="button" class="btn btn-primary" >{{each.seat_id}}</button><a/>
+                      {% endif %}
+                    {% endfor %}
+                    <br>
+                    <br>
+
+                    {% for each in seats[19:29] %}
+                      {% if seatfinder(each,screening) == True %}
+                        <button type="button" class="btn btn-secondary" >---</button>
+                       {% else %}
+                        <a href="/checkout/{{screening.screening_id}}/{{each.seat_id}}"><button type="button" class="btn btn-primary" >{{each.seat_id}}</button><a/>
+                      {% endif %}
+                    {% endfor %}
+                    <br>
+                    <br>
+
+                    {% for each in seats[29:39] %}
+                      {% if seatfinder(each,screening) == True %}
+                        <button type="button" class="btn btn-secondary" >---</button>
+                       {% else %}
+                        <a href="/checkout/{{screening.screening_id}}/{{each.seat_id}}"><button type="button" class="btn btn-primary" >{{each.seat_id}}</button><a/>
+                      {% endif %}
+                    {% endfor %}
+                    <br>
+                    <br>
+
+                    {% for each in seats[39:49] %}
+                      {% if seatfinder(each,screening) == True %}
+                        <button type="button" class="btn btn-secondary" >---</button>
+                       {% else %}
+                        <a href="/checkout/{{screening.screening_id}}/{{each.seat_id}}"><button type="button" class="btn btn-primary" >{{each.seat_id}}</button><a/>
+                      {% endif %}
+                    {% endfor %}
+                    <br>
+                    <br>
+
+                    {% for each in seats[49:59] %}
+                      {% if seatfinder(each,screening) == True %}
+                        <button type="button" class="btn btn-secondary" >---</button>
+                       {% else %}
+                        <a href="/checkout/{{screening.screening_id}}/{{each.seat_id}}"><button type="button" class="btn btn-primary" >{{each.seat_id}}</button><a/>
+                      {% endif %}
+                    {% endfor %}
+                    <br>
+                    <br>
+
+                    {% for each in seats[59:69] %}
+                      {% if seatfinder(each,screening) == True %}
+                        <button type="button" class="btn btn-secondary" >---</button>
+                       {% else %}
+                        <a href="/checkout/{{screening.screening_id}}/{{each.seat_id}}"><button type="button" class="btn btn-primary" >{{each.seat_id}}</button><a/>
+                      {% endif %}
+                    {% endfor %}
+                    <br>
+                    <br>
+
+                    {% for each in seats[69:79] %}
+                      {% if seatfinder(each,screening) == True %}
+                        <button type="button" class="btn btn-secondary" >---</button>
+                       {% else %}
+                        <a href="/checkout/{{screening.screening_id}}/{{each.seat_id}}"><button type="button" class="btn btn-primary" >{{each.seat_id}}</button><a/>
+                      {% endif %}
+                    {% endfor %}
+                    <br>
+                    <br>
+
+                    {% for each in seats[79:89] %}
+                      {% if seatfinder(each,screening) == True %}
+                        <button type="button" class="btn btn-secondary" >---</button>
+                       {% else %}
+                        <a href="/checkout/{{screening.screening_id}}/{{each.seat_id}}"><button type="button" class="btn btn-primary" >{{each.seat_id}}</button><a/>
+                      {% endif %}
+                    {% endfor %}
+                    <br>
+                    <br>
+
+                    {% for each in seats[89:99] %}
+                      {% if seatfinder(each,screening) == True %}
+                        <button type="button" class="btn btn-secondary" >---</button>
+                       {% else %}
+                        <a href="/checkout/{{screening.screening_id}}/{{each.seat_id}}"><button type="button" class="btn btn-primary" >{{each.seat_id}}</button><a/>
+                      {% endif %}
+                    {% endfor %}
+                    <br>
+                    <br>
+
+                <div class="row">
+                <br><br>
+            </div>
+        <!-- </div> -->
+    </div>
+
+    <hr>
+    <hr>
+
+
+{% endblock %}

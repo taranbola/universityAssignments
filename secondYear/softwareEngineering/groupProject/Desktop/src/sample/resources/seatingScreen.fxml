@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1050.0" prefWidth="1680.0" stylesheets="@mainStyle.css" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SeatingScreenController">
+   <children>
+      <GridPane layoutX="3.0" layoutY="6.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1050.0" prefWidth="1680.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Button fx:id="backButton" alignment="TOP_CENTER" cancelButton="true" contentDisplay="TOP" mnemonicParsing="false" onAction="#backButtonClicked" prefHeight="50.0" prefWidth="150.0" styleClass="Button" stylesheets="@darkTheme.css" text="&lt;" GridPane.valignment="TOP">
+               <font>
+                  <Font size="22.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </GridPane.margin>
+            </Button>
+            <Button fx:id="refresh" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#refreshScreen" prefHeight="50.0" prefWidth="376.0" stylesheets="@darkTheme.css" text="Clear selection / Refresh" GridPane.columnIndex="11" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </GridPane.margin>
+            </Button>
+            <Label fx:id="childTotal" prefHeight="36.0" prefWidth="234.0" GridPane.columnIndex="11" GridPane.rowIndex="1">
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+               <font>
+                  <Font size="25.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="studentTotal" prefHeight="36.0" prefWidth="234.0" GridPane.columnIndex="11" GridPane.rowIndex="2">
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+               <font>
+                  <Font size="25.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="adultTotal" prefHeight="36.0" prefWidth="234.0" GridPane.columnIndex="11" GridPane.rowIndex="4">
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+               <font>
+                  <Font size="25.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="vipTotal" prefHeight="36.0" prefWidth="234.0" GridPane.columnIndex="11" GridPane.rowIndex="5">
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+               <font>
+                  <Font size="25.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+            </Label>
+            <Button fx:id="seat1" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="buttonVIP" stylesheets="@darkTheme.css" text="1" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </Button>
+            <Button fx:id="payButton" mnemonicParsing="false" onAction="#payClicked" prefHeight="65.0" prefWidth="146.0" styleClass="Button" text="Pay" GridPane.columnIndex="11" GridPane.rowIndex="11" />
+            <Button fx:id="seat2" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="buttonVIP" stylesheets="@darkTheme.css" text="2" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Button fx:id="seat3" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="buttonVIP" stylesheets="@darkTheme.css" text="3" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Button fx:id="seat4" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="buttonVIP" stylesheets="@darkTheme.css" text="4" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Button fx:id="seat5" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="buttonVIP" stylesheets="@darkTheme.css" text="5" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Button fx:id="seat6" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="buttonVIP" stylesheets="@darkTheme.css" text="6" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Button fx:id="seat7" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="buttonVIP" stylesheets="@darkTheme.css" text="7" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Button fx:id="seat8" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="buttonVIP" stylesheets="@darkTheme.css" text="8" GridPane.columnIndex="8" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Button fx:id="seat9" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="buttonVIP" stylesheets="@darkTheme.css" text="9" GridPane.columnIndex="9" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+            <Button fx:id="seat10" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="seatButton" stylesheets="@darkTheme.css" text="10" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+            <Button fx:id="seat11" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="seatButton" stylesheets="@darkTheme.css" text="11" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+            <Button fx:id="seat12" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="seatButton" stylesheets="@darkTheme.css" text="12" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+            <Button fx:id="seat13" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="seatButton" stylesheets="@darkTheme.css" text="13" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+            <Button fx:id="seat14" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="seatButton" stylesheets="@darkTheme.css" text="14" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+            <Button fx:id="seat15" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="seatButton" stylesheets="@darkTheme.css" text="15" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+            <Button fx:id="seat16" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="seatButton" stylesheets="@darkTheme.css" text="16" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+            <Button fx:id="seat17" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="seatButton" stylesheets="@darkTheme.css" text="17" GridPane.columnIndex="8" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+            <Button fx:id="seat18" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="seatButton" stylesheets="@darkTheme.css" text="18" GridPane.columnIndex="9" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+            <Button fx:id="seat19" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="seatButton" stylesheets="@darkTheme.css" text="19" GridPane.columnIndex="10" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+            <Button fx:id="seat20" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="seatButton" stylesheets="@darkTheme.css" text="20" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+            <Button fx:id="seat30" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="seatButton" stylesheets="@darkTheme.css" text="30" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+            <Button fx:id="seat40" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="seatButton" stylesheets="@darkTheme.css" text="40" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
+            <Button fx:id="seat50" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="seatButton" stylesheets="@darkTheme.css" text="23" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="6" />
+            <Button fx:id="seat60" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="seatButton" stylesheets="@darkTheme.css" text="60" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="7" />
+            <Button fx:id="seat70" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="seatButton" stylesheets="@darkTheme.css" text="70" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="8" />
+            <Button fx:id="seat80" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="seatButton" stylesheets="@darkTheme.css" text="80" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="9" />
+            <Button fx:id="seat90" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="seatButton" stylesheets="@darkTheme.css" text="90" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="10" />
+            <Button fx:id="seat21" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="seatButton" stylesheets="@darkTheme.css" text="21" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+            <Button fx:id="seat22" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="seatButton" stylesheets="@darkTheme.css" text="22" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+            <Button fx:id="seat23" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="seatButton" stylesheets="@darkTheme.css" text="23" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+            <Button fx:id="seat24" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="seatButton" stylesheets="@darkTheme.css" text="24" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+            <Button fx:id="seat25" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="seatButton" stylesheets="@darkTheme.css" text="25" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+            <Button fx:id="seat26" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="seatButton" stylesheets="@darkTheme.css" text="26" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+            <Button fx:id="seat27" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="seatButton" stylesheets="@darkTheme.css" text="27" GridPane.columnIndex="8" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+            <Button fx:id="seat28" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="seatButton" stylesheets="@darkTheme.css" text="28" GridPane.columnIndex="9" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+            <Button fx:id="seat29" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="seatButton" stylesheets="@darkTheme.css" text="29" GridPane.columnIndex="10" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+            <Button fx:id="seat31" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="seatButton" stylesheets="@darkTheme.css" text="31" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+            <Button fx:id="seat32" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="seatButton" stylesheets="@darkTheme.css" text="32" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+            <Button fx:id="seat33" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="seatButton" stylesheets="@darkTheme.css" text="33" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+            <Button fx:id="seat34" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="seatButton" stylesheets="@darkTheme.css" text="34" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+            <Button fx:id="seat35" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="seatButton" stylesheets="@darkTheme.css" text="35" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+            <Button fx:id="seat36" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="seatButton" stylesheets="@darkTheme.css" text="36" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+            <Button fx:id="seat37" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="seatButton" stylesheets="@darkTheme.css" text="37" GridPane.columnIndex="8" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+            <Button fx:id="seat38" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="seatButton" stylesheets="@darkTheme.css" text="38" GridPane.columnIndex="9" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+            <Button fx:id="seat39" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="seatButton" stylesheets="@darkTheme.css" text="39" GridPane.columnIndex="10" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+            <Button fx:id="seat41" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="seatButton" stylesheets="@darkTheme.css" text="41" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
+            <Button fx:id="seat42" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="seatButton" stylesheets="@darkTheme.css" text="42" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
+            <Button fx:id="seat43" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="seatButton" stylesheets="@darkTheme.css" text="43" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
+            <Button fx:id="seat44" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="seatButton" stylesheets="@darkTheme.css" text="44" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
+            <Button fx:id="seat45" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="seatButton" stylesheets="@darkTheme.css" text="45" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
+            <Button fx:id="seat46" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="seatButton" stylesheets="@darkTheme.css" text="46" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
+            <Button fx:id="seat47" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="seatButton" stylesheets="@darkTheme.css" text="47" GridPane.columnIndex="8" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
+            <Button fx:id="seat48" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="seatButton" stylesheets="@darkTheme.css" text="48" GridPane.columnIndex="9" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
+            <Button fx:id="seat49" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="seatButton" stylesheets="@darkTheme.css" text="49" GridPane.columnIndex="10" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
+            <Button fx:id="seat51" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="seatButton" stylesheets="@darkTheme.css" text="51" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="6" />
+            <Button fx:id="seat52" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="seatButton" stylesheets="@darkTheme.css" text="52" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="6" />
+            <Button fx:id="seat54" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="seatButton" stylesheets="@darkTheme.css" text="54" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="6" />
+            <Button fx:id="seat53" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="seatButton" stylesheets="@darkTheme.css" text="53" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="6" />
+            <Button fx:id="seat55" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="seatButton" stylesheets="@darkTheme.css" text="55" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="6" />
+            <Button fx:id="seat58" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="seatButton" stylesheets="@darkTheme.css" text="58" GridPane.columnIndex="9" GridPane.halignment="CENTER" GridPane.rowIndex="6" />
+            <Button fx:id="seat57" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="seatButton" stylesheets="@darkTheme.css" text="57" GridPane.columnIndex="8" GridPane.halignment="CENTER" GridPane.rowIndex="6" />
+            <Button fx:id="seat56" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="seatButton" stylesheets="@darkTheme.css" text="56" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.rowIndex="6" />
+            <Button fx:id="seat65" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="seatButton" stylesheets="@darkTheme.css" text="65" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="7" />
+            <Button fx:id="seat64" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="seatButton" stylesheets="@darkTheme.css" text="64" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="7" />
+            <Button fx:id="seat63" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="seatButton" stylesheets="@darkTheme.css" text="63" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="7" />
+            <Button fx:id="seat62" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="seatButton" stylesheets="@darkTheme.css" text="62" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="7" />
+            <Button fx:id="seat61" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="seatButton" stylesheets="@darkTheme.css" text="61" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="7" />
+            <Button fx:id="seat59" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="seatButton" stylesheets="@darkTheme.css" text="59" GridPane.columnIndex="10" GridPane.halignment="CENTER" GridPane.rowIndex="6" />
+            <Button fx:id="seat72" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="seatButton" stylesheets="@darkTheme.css" text="72" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="8" />
+            <Button fx:id="seat71" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="seatButton" stylesheets="@darkTheme.css" text="71" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="8" />
+            <Button fx:id="seat69" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="seatButton" stylesheets="@darkTheme.css" text="69" GridPane.columnIndex="10" GridPane.halignment="CENTER" GridPane.rowIndex="7" />
+            <Button fx:id="seat68" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="seatButton" stylesheets="@darkTheme.css" text="68" GridPane.columnIndex="9" GridPane.halignment="CENTER" GridPane.rowIndex="7" />
+            <Button fx:id="seat67" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="seatButton" stylesheets="@darkTheme.css" text="67" GridPane.columnIndex="8" GridPane.halignment="CENTER" GridPane.rowIndex="7" />
+            <Button fx:id="seat66" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="seatButton" stylesheets="@darkTheme.css" text="66" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.rowIndex="7" />
+            <Button fx:id="seat93" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="seatButton" stylesheets="@darkTheme.css" text="93" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="10" />
+            <Button fx:id="seat92" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="seatButton" stylesheets="@darkTheme.css" text="92" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="10" />
+            <Button fx:id="seat91" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="seatButton" stylesheets="@darkTheme.css" text="91" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="10" />
+            <Button fx:id="seat83" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="seatButton" stylesheets="@darkTheme.css" text="83" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="9" />
+            <Button fx:id="seat82" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="seatButton" stylesheets="@darkTheme.css" text="82" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="9" />
+            <Button fx:id="seat81" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="seatButton" stylesheets="@darkTheme.css" text="81" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="9" />
+            <Button fx:id="seat73" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="seatButton" stylesheets="@darkTheme.css" text="73" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="8" />
+            <Button fx:id="seat75" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="seatButton" stylesheets="@darkTheme.css" text="75" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="8" />
+            <Button fx:id="seat84" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="seatButton" stylesheets="@darkTheme.css" text="84" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="9" />
+            <Button fx:id="seat74" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="seatButton" stylesheets="@darkTheme.css" text="74" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="8" />
+            <Button fx:id="seat85" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="seatButton" stylesheets="@darkTheme.css" text="85" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="9" />
+            <Button fx:id="seat79" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="seatButton" stylesheets="@darkTheme.css" text="79" GridPane.columnIndex="10" GridPane.halignment="CENTER" GridPane.rowIndex="8" />
+            <Button fx:id="seat78" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="seatButton" stylesheets="@darkTheme.css" text="78" GridPane.columnIndex="9" GridPane.halignment="CENTER" GridPane.rowIndex="8" />
+            <Button fx:id="seat77" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="seatButton" stylesheets="@darkTheme.css" text="77" GridPane.columnIndex="8" GridPane.halignment="CENTER" GridPane.rowIndex="8" />
+            <Button fx:id="seat76" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="seatButton" stylesheets="@darkTheme.css" text="76" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.rowIndex="8" />
+            <Button fx:id="seat96" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="seatButton" stylesheets="@darkTheme.css" text="96" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.rowIndex="10" />
+            <Button fx:id="seat95" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="seatButton" stylesheets="@darkTheme.css" text="95" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="10" />
+            <Button fx:id="seat87" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="seatButton" stylesheets="@darkTheme.css" text="87" GridPane.columnIndex="8" GridPane.halignment="CENTER" GridPane.rowIndex="9" />
+            <Button fx:id="seat86" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="seatButton" stylesheets="@darkTheme.css" text="86" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.rowIndex="9" />
+            <Button fx:id="seat88" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="seatButton" stylesheets="@darkTheme.css" text="88" GridPane.columnIndex="9" GridPane.halignment="CENTER" GridPane.rowIndex="9" />
+            <Button fx:id="seat89" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="seatButton" stylesheets="@darkTheme.css" text="89" GridPane.columnIndex="10" GridPane.halignment="CENTER" GridPane.rowIndex="9" />
+            <Button fx:id="seat94" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="seatButton" stylesheets="@darkTheme.css" text="94" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="10" />
+            <Button fx:id="seat99" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="seatButton" stylesheets="@darkTheme.css" text="99" GridPane.columnIndex="10" GridPane.halignment="CENTER" GridPane.rowIndex="10" />
+            <Button fx:id="seat98" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="seatButton" stylesheets="@darkTheme.css" text="98" GridPane.columnIndex="9" GridPane.halignment="CENTER" GridPane.rowIndex="10" />
+            <Button fx:id="seat97" mnemonicParsing="false" onAction="#seatSelection" prefHeight="60.0" prefWidth="100.0" styleClass="seatButton" stylesheets="@darkTheme.css" text="97" GridPane.columnIndex="8" GridPane.halignment="CENTER" GridPane.rowIndex="10" />
+         </children>
+         <padding>
+            <Insets bottom="50.0" left="50.0" right="50.0" top="50.0" />
+         </padding>
+      </GridPane>
+   </children>
+</AnchorPane>
