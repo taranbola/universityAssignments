@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<project name="Cwk2" basedir=".">
+
+  <property name="src.dir" value="src"/>
+  <property name="lib.dir" value="lib"/>
+  <property name="build.dir" value="bin"/>
+  <property name="report.file" value="report.pdf"/>
+  <property name="zip.file" value="submission.zip"/>
+
+  <path id="project.classpath">
+    <pathelement location="${build.dir}"/>
+    <pathelement location="${lib.dir}/freemarker.jar"/>
+    <pathelement location="${lib.dir}/jetty-all.jar"/>
+    <pathelement location="${lib.dir}/sqlite-jdbc-3.23.1.jar"/>
+  </path>
+
+  <target name="init">
+    <mkdir dir="${build.dir}"/>
+  </target>
+
+  <target name="compile" depends="init" description="Compile source code">
+    <javac srcdir="${src.dir}" destdir="${build.dir}" includeantruntime="false">
+      <classpath refid="project.classpath"/>
+    </javac>
+  </target>
+
+  <target name="run" depends="compile" description="Run application">
+    <java classname="comp3911.cwk2.AppServer">
+      <classpath refid="project.classpath"/>
+    </java>
+  </target>
+
+  <target name="clean" description="Remove compiled code">
+    <delete dir="${build.dir}"/>
+  </target>
+
+  <target name="zip" description="Create a Zip archive for submission">
+    <fail message="${report.file} is missing!">
+      <condition>
+        <resourcecount count="0">
+          <fileset dir="." includes="${report.file}"/>
+        </resourcecount>
+      </condition>
+    </fail>
+    <zip destfile="${zip.file}" basedir="." excludes="${lib.dir}/freemarker.jar,${lib.dir}/jetty-all.jar,${lib.dir}/sqlite-jdbc-3.23.1.jar"/>
+  </target>
+
+</project>
