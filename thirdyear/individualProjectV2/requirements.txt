@@ -1,0 +1,4 @@
+Python~=2.7.17
+Flask~=1.1
+requests~=2.22
+pip install uncompyle6

@@ -1,0 +1,72 @@
+<html>
+  <head>
+    <title>{{ title }}</title>
+    <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .navbar {
+      overflow: hidden;
+      background-color: #333;
+      border-style: solid;
+      border-color: white;
+    }
+
+    .navbar button {
+      float: left;
+      /* font-size: 24px; */
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .navbar button[type=submit] {
+      padding: 6px;
+      font-size: 24px;
+      /* border: none; */
+      border-style: solid;
+      border-color: white;
+      background-color: #333;
+    }
+
+    .navbar button[type=button] {
+      padding: 6px;
+      font-size: 24px;
+      border: none;
+      float: right;
+      background-color: #333;
+    }
+
+    .navbar button[type=submit]:hover, .dropdown:hover .dropbtn {
+      background-color: red;
+      border-style: solid;
+      border-color: white;
+    }
+    </style>
+  </head>
+  <body>
+
+    <div class="navbar">
+      <form action="/changehost" id="textform" method="post" enctype="multipart/form-data">
+        <button type="submit" name="server" value="http://127.0.0.1:8000">Server 8000</button>
+        <button type="submit" name="server" value="http://127.0.0.1:8001">Server 8001</button>
+        <button type="submit" name="server" value="http://127.0.0.1:8002">Server 8002</button>
+        <button type="button" disabled>The Current Connected Server is {{node_address}}</button>
+      </form>
+    </div>
+
+    <center><h1>{{ title }}</h1></center>
+    <hr>
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+    {% for message in messages %}
+        <h3 style="color:red; text-align: center; border: 3px solid red;">{{ message }}</h3>
+    {% endfor %}
+    {% endif %}
+    {% endwith %}
+    {% block content %}{% endblock %}
+  </body>
+</html>
