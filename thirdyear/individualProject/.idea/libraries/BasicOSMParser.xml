@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="BasicOSMParser">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/BasicOSMParser.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
