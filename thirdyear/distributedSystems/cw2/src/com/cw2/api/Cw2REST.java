@@ -83,7 +83,7 @@ public class Cw2REST {
 
       try {
          System.out.println("API 1 Input \nLocation: " + city);
-         String urlString = "http://api.openweathermap.org/data/2.5/weather?q="+ city +"&units=metric&appid=522807511d2b338ce7145c8142679743";
+         String urlString = "http://api.openweathermap.org/data/2.5/weather?q="+ city +"&units=metric&appid=";
          System.out.println(urlString);
 
          //Gets the data from the API and then appends it to a string to be used to parse
